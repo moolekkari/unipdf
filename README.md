@@ -83,44 +83,4 @@ Please contact us with a brief summary of what you need and we will get back to 
 This library (unipdf) has a dual license, a commercial one suitable for closed source projects and an
 AGPL license that can be used in open source software.
 
-Depending on your needs, you must choose one of them and follow its policies. A detail of the policies
-and agreements for each license type are available in the [LICENSE.COMMERCIAL](LICENSE.COMMERCIAL)
-and [LICENSE.AGPL](LICENSE.AGPL) files.
-
-In brief, purchasing a license is mandatory as soon as you develop activities
-distributing the unipdf software inside your product or deploying it on a network
-without disclosing the source code of your own applications under the AGPL license.
-These activities include:
-
- * offering services as an application service provider or over-network application programming interface (API)
- * creating/manipulating documents for users in a web/server/cloud application
- * shipping unipdf with a closed source product
-
-Please see [pricing](https://unidoc.io/unipdf/#unipdf-pricing) to purchase a commercial license or contact sales at sales@unidoc.io
-for more info.
-
-## Getting Rid of the Watermark - Get a License
-Out of the box - unipdf is unlicensed and outputs a watermark on all pages, perfect for prototyping.
-To use unipdf in your projects, you need to get a license.
-
-Get your license on [https://unidoc.io](https://unidoc.io).
-
-The easiest way to load your license is through environment variables, for example:
-```bash
-export UNIPDF_CUSTOMER_NAME=UniDoc
-export UNIPDF_LICENSE_PATH=/path/to/licenses/UniDoc.txt
-```
-
-Alternatively you can load the license in code, simply do:
-```go
-licenseKey := "... your license here ..."
-customerName := `name of license holder`
-
-err := license.SetLicenseKey(licenseKey, customerName)
-if err != nil {
-    fmt.Printf("Error loading license: %v\n", err)
-    os.Exit(1)
-}
-```
-
 [contributing]: CONTRIBUTING.md
