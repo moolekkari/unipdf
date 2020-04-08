@@ -10,7 +10,7 @@ import (
 	"errors"
 	"io"
 
-	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/common"
 )
 
 // readAtLeast reads at least n bytes into slice p.

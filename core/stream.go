@@ -8,7 +8,7 @@ package core
 import (
 	"fmt"
 
-	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/common"
 )
 
 // NewEncoderFromStream creates a StreamEncoder based on the stream's dictionary.

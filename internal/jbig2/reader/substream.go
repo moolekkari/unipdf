@@ -10,7 +10,7 @@ import (
 	"errors"
 	"io"
 
-	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/common"
 )
 
 // SubstreamReader is the wrapper over the Reader's parts that is allowed only to

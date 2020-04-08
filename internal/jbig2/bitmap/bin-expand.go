@@ -6,7 +6,7 @@
 package bitmap
 
 import (
-	"maze.io/x/unipdf/v3/internal/jbig2/errors"
+	"maze.io/x/unipdf/internal/jbig2/errors"
 )
 
 func expandBinaryFactor2(d, s *Bitmap) (err error) {

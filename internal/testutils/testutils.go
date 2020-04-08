@@ -10,8 +10,8 @@ import (
 	"errors"
 	"io"
 
-	"maze.io/x/unipdf/v3/common"
-	"maze.io/x/unipdf/v3/core"
+	"maze.io/x/unipdf/common"
+	"maze.io/x/unipdf/core"
 )
 
 // ParseIndirectObjects parses a sequence of indirect/stream objects sequentially from a `rawpdf` text.

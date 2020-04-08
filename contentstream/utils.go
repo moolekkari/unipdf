@@ -8,9 +8,9 @@ package contentstream
 import (
 	"errors"
 
-	"maze.io/x/unipdf/v3/common"
-	"maze.io/x/unipdf/v3/core"
-	"maze.io/x/unipdf/v3/model"
+	"maze.io/x/unipdf/common"
+	"maze.io/x/unipdf/core"
+	"maze.io/x/unipdf/model"
 )
 
 func makeParamsFromFloats(vals []float64) []core.PdfObject {

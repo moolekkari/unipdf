@@ -6,9 +6,9 @@
 package classer
 
 import (
-	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/common"
 
-	"maze.io/x/unipdf/v3/internal/jbig2/bitmap"
+	"maze.io/x/unipdf/internal/jbig2/bitmap"
 )
 
 // similarTemplatesFinder stores the state of a state machine which fetches similar sized templates.

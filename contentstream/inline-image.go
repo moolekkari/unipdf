@@ -11,9 +11,9 @@ import (
 	"fmt"
 	"io"
 
-	"maze.io/x/unipdf/v3/common"
-	"maze.io/x/unipdf/v3/core"
-	"maze.io/x/unipdf/v3/model"
+	"maze.io/x/unipdf/common"
+	"maze.io/x/unipdf/core"
+	"maze.io/x/unipdf/model"
 )
 
 // ContentStreamInlineImage is a representation of an inline image in a Content stream. Everything between the BI and EI operands.

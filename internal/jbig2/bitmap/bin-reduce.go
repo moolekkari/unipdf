@@ -8,9 +8,9 @@ package bitmap
 import (
 	"encoding/binary"
 
-	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/common"
 
-	"maze.io/x/unipdf/v3/internal/jbig2/errors"
+	"maze.io/x/unipdf/internal/jbig2/errors"
 )
 
 // reduceBinaryCascade performs up to four cascades 2x rank reductions.

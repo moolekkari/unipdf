@@ -6,8 +6,8 @@
 package classer
 
 import (
-	"maze.io/x/unipdf/v3/internal/jbig2/bitmap"
-	"maze.io/x/unipdf/v3/internal/jbig2/errors"
+	"maze.io/x/unipdf/internal/jbig2/bitmap"
+	"maze.io/x/unipdf/internal/jbig2/errors"
 )
 
 // Settings keeps the settings for the classer.

@@ -8,7 +8,7 @@ package segments
 import (
 	"math"
 
-	"maze.io/x/unipdf/v3/internal/jbig2/reader"
+	"maze.io/x/unipdf/internal/jbig2/reader"
 )
 
 // EndOfStripe flags an end of stripe - see 7.4.9.

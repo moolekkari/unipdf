@@ -12,8 +12,8 @@ import (
 	gocolor "image/color"
 	"image/jpeg"
 
-	"maze.io/x/unipdf/v3/common"
-	"maze.io/x/unipdf/v3/core"
+	"maze.io/x/unipdf/common"
+	"maze.io/x/unipdf/core"
 )
 
 // Creates the encoder for the inline image's Filter and DecodeParms.

@@ -7,7 +7,7 @@ package model
 
 import (
 	"github.com/stretchr/testify/require"
-	"maze.io/x/unipdf/v3/core"
+	"maze.io/x/unipdf/core"
 	"strings"
 	"testing"
 )

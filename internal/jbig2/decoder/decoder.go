@@ -8,10 +8,10 @@ package decoder
 import (
 	"image"
 
-	"maze.io/x/unipdf/v3/internal/jbig2/bitmap"
-	"maze.io/x/unipdf/v3/internal/jbig2/document"
-	"maze.io/x/unipdf/v3/internal/jbig2/errors"
-	"maze.io/x/unipdf/v3/internal/jbig2/reader"
+	"maze.io/x/unipdf/internal/jbig2/bitmap"
+	"maze.io/x/unipdf/internal/jbig2/document"
+	"maze.io/x/unipdf/internal/jbig2/errors"
+	"maze.io/x/unipdf/internal/jbig2/reader"
 )
 
 // Decoder is the structure used to decode JBIG2 encoded byte streams.

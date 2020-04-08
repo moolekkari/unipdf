@@ -6,7 +6,7 @@
 package creator
 
 import (
-	"maze.io/x/unipdf/v3/model"
+	"maze.io/x/unipdf/model"
 )
 
 // TextStyle is a collection of properties that can be assigned to a chunk of text.

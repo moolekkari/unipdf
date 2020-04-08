@@ -11,7 +11,7 @@ import (
 	"github.com/golang/freetype/raster"
 	"golang.org/x/image/math/fixed"
 
-	"maze.io/x/unipdf/v3/internal/transform"
+	"maze.io/x/unipdf/internal/transform"
 )
 
 func flattenPath(p raster.Path) [][]transform.Point {

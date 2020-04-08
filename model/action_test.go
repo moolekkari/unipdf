@@ -11,7 +11,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"maze.io/x/unipdf/v3/core"
+	"maze.io/x/unipdf/core"
 )
 
 // testAction loads an action object from object number 1 loaded from `rawText` PDF content and checks that

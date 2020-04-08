@@ -9,13 +9,13 @@ import (
 	"fmt"
 	"math"
 
-	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/common"
 
-	"maze.io/x/unipdf/v3/internal/jbig2/basic"
-	"maze.io/x/unipdf/v3/internal/jbig2/bitmap"
-	"maze.io/x/unipdf/v3/internal/jbig2/document/segments"
-	"maze.io/x/unipdf/v3/internal/jbig2/errors"
-	"maze.io/x/unipdf/v3/internal/jbig2/writer"
+	"maze.io/x/unipdf/internal/jbig2/basic"
+	"maze.io/x/unipdf/internal/jbig2/bitmap"
+	"maze.io/x/unipdf/internal/jbig2/document/segments"
+	"maze.io/x/unipdf/internal/jbig2/errors"
+	"maze.io/x/unipdf/internal/jbig2/writer"
 )
 
 // EncodingMethod defines the method of encoding for given page,

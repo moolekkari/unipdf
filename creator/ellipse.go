@@ -6,8 +6,8 @@
 package creator
 
 import (
-	"maze.io/x/unipdf/v3/contentstream/draw"
-	"maze.io/x/unipdf/v3/model"
+	"maze.io/x/unipdf/contentstream/draw"
+	"maze.io/x/unipdf/model"
 )
 
 // Ellipse defines an ellipse with a center at (xc,yc) and a specified width and height.  The ellipse can have a colored

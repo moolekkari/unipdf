@@ -12,11 +12,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/common"
 
-	"maze.io/x/unipdf/v3/internal/jbig2/bitmap"
-	"maze.io/x/unipdf/v3/internal/jbig2/document/segments"
-	"maze.io/x/unipdf/v3/internal/jbig2/reader"
+	"maze.io/x/unipdf/internal/jbig2/bitmap"
+	"maze.io/x/unipdf/internal/jbig2/document/segments"
+	"maze.io/x/unipdf/internal/jbig2/reader"
 )
 
 // TestDecodeDocument test the DecodeDocument function.

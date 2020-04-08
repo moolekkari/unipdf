@@ -11,7 +11,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"maze.io/x/unipdf/v3/internal/jbig2/errors"
+	"maze.io/x/unipdf/internal/jbig2/errors"
 )
 
 var (

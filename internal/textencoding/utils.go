@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"unicode"
 
-	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/common"
 )
 
 func glyphToRune(glyph GlyphName, glyphToRuneMap map[GlyphName]rune) (rune, bool) {

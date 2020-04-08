@@ -15,8 +15,8 @@ import (
 	"fmt"
 	"hash"
 
-	"maze.io/x/unipdf/v3/core"
-	"maze.io/x/unipdf/v3/model"
+	"maze.io/x/unipdf/core"
+	"maze.io/x/unipdf/model"
 )
 
 // SignFunc represents a custom signing function. The function should return

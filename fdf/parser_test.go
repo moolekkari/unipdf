@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"testing"
 
-	"maze.io/x/unipdf/v3/core"
+	"maze.io/x/unipdf/core"
 )
 
 const fdfExample1 = `

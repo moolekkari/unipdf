@@ -11,11 +11,11 @@ import (
 	"strings"
 	"time"
 
-	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/common"
 
-	"maze.io/x/unipdf/v3/internal/jbig2/bitmap"
-	"maze.io/x/unipdf/v3/internal/jbig2/decoder/arithmetic"
-	"maze.io/x/unipdf/v3/internal/jbig2/reader"
+	"maze.io/x/unipdf/internal/jbig2/bitmap"
+	"maze.io/x/unipdf/internal/jbig2/decoder/arithmetic"
+	"maze.io/x/unipdf/internal/jbig2/reader"
 )
 
 // GenericRefinementRegion represtents jbig2 generic refinement region segment - 7.4.7.

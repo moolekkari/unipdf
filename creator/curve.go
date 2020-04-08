@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"strings"
 
-	"maze.io/x/unipdf/v3/model"
+	"maze.io/x/unipdf/model"
 )
 
 // newCurve returns new instance of Curve between points (x1,y1) and (x2, y2) with control point (cx,cy).

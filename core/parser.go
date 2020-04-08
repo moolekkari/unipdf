@@ -18,8 +18,8 @@ import (
 	"strconv"
 	"strings"
 
-	"maze.io/x/unipdf/v3/common"
-	"maze.io/x/unipdf/v3/core/security"
+	"maze.io/x/unipdf/common"
+	"maze.io/x/unipdf/core/security"
 )
 
 // Regular Expressions for parsing and identifying object signatures.

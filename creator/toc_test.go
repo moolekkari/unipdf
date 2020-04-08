@@ -7,7 +7,7 @@ package creator
 import (
 	"testing"
 
-	"maze.io/x/unipdf/v3/model"
+	"maze.io/x/unipdf/model"
 )
 
 func TestTOCAdvanced(t *testing.T) {

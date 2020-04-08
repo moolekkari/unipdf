@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"maze.io/x/unipdf/v3/internal/cmap/bcmaps"
+	"maze.io/x/unipdf/internal/cmap/bcmaps"
 )
 
 func TestIsPredefinedCMap(t *testing.T) {

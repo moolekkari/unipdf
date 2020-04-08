@@ -12,7 +12,7 @@ import (
 	"os"
 	"strings"
 
-	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/common"
 )
 
 // Defaults to unlicensed.

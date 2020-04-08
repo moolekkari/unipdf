@@ -3,8 +3,8 @@ package jbig2
 import (
 	"sort"
 
-	"maze.io/x/unipdf/v3/internal/jbig2/document"
-	"maze.io/x/unipdf/v3/internal/jbig2/document/segments"
+	"maze.io/x/unipdf/internal/jbig2/document"
+	"maze.io/x/unipdf/internal/jbig2/document/segments"
 )
 
 // Globals is the v3 mapping of the jbig2 segments to header mapping.

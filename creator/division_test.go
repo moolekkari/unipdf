@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"maze.io/x/unipdf/v3/model"
+	"maze.io/x/unipdf/model"
 )
 
 var seed = rand.New(rand.NewSource(time.Now().UnixNano()))

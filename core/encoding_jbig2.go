@@ -9,14 +9,14 @@ import (
 	"image"
 	"image/color"
 
-	"maze.io/x/unipdf/v3/common"
-	"maze.io/x/unipdf/v3/internal/imageutil"
+	"maze.io/x/unipdf/common"
+	"maze.io/x/unipdf/internal/imageutil"
 
-	"maze.io/x/unipdf/v3/internal/jbig2"
-	"maze.io/x/unipdf/v3/internal/jbig2/bitmap"
-	"maze.io/x/unipdf/v3/internal/jbig2/decoder"
-	"maze.io/x/unipdf/v3/internal/jbig2/document"
-	"maze.io/x/unipdf/v3/internal/jbig2/errors"
+	"maze.io/x/unipdf/internal/jbig2"
+	"maze.io/x/unipdf/internal/jbig2/bitmap"
+	"maze.io/x/unipdf/internal/jbig2/decoder"
+	"maze.io/x/unipdf/internal/jbig2/document"
+	"maze.io/x/unipdf/internal/jbig2/errors"
 )
 
 // JBIG2CompressionType defines the enum compression type used by the JBIG2Encoder.

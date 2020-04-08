@@ -8,7 +8,7 @@ package optimize
 import (
 	"crypto/md5"
 
-	"maze.io/x/unipdf/v3/core"
+	"maze.io/x/unipdf/core"
 )
 
 // CombineIdenticalIndirectObjects combines identical indirect objects.

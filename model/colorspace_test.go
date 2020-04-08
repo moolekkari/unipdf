@@ -11,8 +11,8 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"maze.io/x/unipdf/v3/core"
-	"maze.io/x/unipdf/v3/internal/testutils"
+	"maze.io/x/unipdf/core"
+	"maze.io/x/unipdf/internal/testutils"
 )
 
 func TestSeparationCS1(t *testing.T) {

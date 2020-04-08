@@ -10,7 +10,7 @@ import (
 
 	"math"
 
-	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/common"
 )
 
 // Color interface represents colors in the PDF creator.

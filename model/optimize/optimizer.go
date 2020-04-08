@@ -6,7 +6,7 @@
 package optimize
 
 import (
-	"maze.io/x/unipdf/v3/core"
+	"maze.io/x/unipdf/core"
 )
 
 // New creates a optimizers chain from options.

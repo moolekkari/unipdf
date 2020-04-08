@@ -12,9 +12,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	pdfcontent "maze.io/x/unipdf/v3/contentstream"
-	"maze.io/x/unipdf/v3/core"
-	pdf "maze.io/x/unipdf/v3/model"
+	pdfcontent "maze.io/x/unipdf/contentstream"
+	"maze.io/x/unipdf/core"
+	pdf "maze.io/x/unipdf/model"
 )
 
 const aes3Dir = `./testdata`

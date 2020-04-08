@@ -10,8 +10,8 @@ import (
 	"io"
 	"os"
 
-	"maze.io/x/unipdf/v3/core"
-	"maze.io/x/unipdf/v3/model"
+	"maze.io/x/unipdf/core"
+	"maze.io/x/unipdf/model"
 )
 
 // FieldData represents form field data loaded from JSON file.

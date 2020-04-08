@@ -6,11 +6,11 @@
 package annotator
 
 import (
-	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/common"
 
-	"maze.io/x/unipdf/v3/contentstream/draw"
-	pdfcore "maze.io/x/unipdf/v3/core"
-	pdf "maze.io/x/unipdf/v3/model"
+	"maze.io/x/unipdf/contentstream/draw"
+	pdfcore "maze.io/x/unipdf/core"
+	pdf "maze.io/x/unipdf/model"
 )
 
 type CircleAnnotationDef struct {

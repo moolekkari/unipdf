@@ -8,7 +8,7 @@ package draw
 import (
 	"fmt"
 
-	"maze.io/x/unipdf/v3/internal/transform"
+	"maze.io/x/unipdf/internal/transform"
 )
 
 // Point represents a two-dimensional point.

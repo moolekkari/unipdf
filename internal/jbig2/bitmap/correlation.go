@@ -8,10 +8,10 @@ package bitmap
 import (
 	"math"
 
-	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/common"
 
-	"maze.io/x/unipdf/v3/internal/jbig2/basic"
-	"maze.io/x/unipdf/v3/internal/jbig2/errors"
+	"maze.io/x/unipdf/internal/jbig2/basic"
+	"maze.io/x/unipdf/internal/jbig2/errors"
 )
 
 // CorrelationScore computes the correlation score between the bitmaps: 'bm1' and 'bm2'.

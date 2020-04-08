@@ -9,10 +9,10 @@ import (
 	"errors"
 	"strconv"
 
-	"maze.io/x/unipdf/v3/common"
-	"maze.io/x/unipdf/v3/contentstream"
-	"maze.io/x/unipdf/v3/core"
-	"maze.io/x/unipdf/v3/model"
+	"maze.io/x/unipdf/common"
+	"maze.io/x/unipdf/contentstream"
+	"maze.io/x/unipdf/core"
+	"maze.io/x/unipdf/model"
 )
 
 // Paragraph represents text drawn with a specified font and can wrap across lines and pages.

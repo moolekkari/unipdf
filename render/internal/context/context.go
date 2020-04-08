@@ -8,7 +8,7 @@ package context
 import (
 	"image"
 
-	"maze.io/x/unipdf/v3/internal/transform"
+	"maze.io/x/unipdf/internal/transform"
 )
 
 // Context defines operations for rendering to a particular target.

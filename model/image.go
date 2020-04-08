@@ -16,11 +16,11 @@ import (
 	_ "image/png"
 	"io"
 
-	"maze.io/x/unipdf/v3/common"
-	"maze.io/x/unipdf/v3/core"
-	"maze.io/x/unipdf/v3/internal/imageutil"
-	"maze.io/x/unipdf/v3/internal/jbig2/bitmap"
-	"maze.io/x/unipdf/v3/internal/sampling"
+	"maze.io/x/unipdf/common"
+	"maze.io/x/unipdf/core"
+	"maze.io/x/unipdf/internal/imageutil"
+	"maze.io/x/unipdf/internal/jbig2/bitmap"
+	"maze.io/x/unipdf/internal/sampling"
 )
 
 // Image interface is a basic representation of an image used in PDF.

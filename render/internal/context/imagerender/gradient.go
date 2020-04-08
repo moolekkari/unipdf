@@ -10,7 +10,7 @@ import (
 	"math"
 	"sort"
 
-	"maze.io/x/unipdf/v3/render/internal/context"
+	"maze.io/x/unipdf/render/internal/context"
 )
 
 type stop struct {

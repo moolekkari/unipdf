@@ -12,8 +12,8 @@ import (
 	"os"
 	"strconv"
 
-	"maze.io/x/unipdf/v3/common"
-	"maze.io/x/unipdf/v3/model"
+	"maze.io/x/unipdf/common"
+	"maze.io/x/unipdf/model"
 )
 
 // Creator is a wrapper around functionality for creating PDF reports and/or adding new

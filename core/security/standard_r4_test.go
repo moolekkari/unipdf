@@ -6,7 +6,7 @@
 package security
 
 import (
-	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/common"
 	"testing"
 )
 

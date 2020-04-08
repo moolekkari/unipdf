@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"maze.io/x/unipdf/v3/internal/jbig2/basic"
+	"maze.io/x/unipdf/internal/jbig2/basic"
 )
 
 func TestClassedPoints_GroupByY(t *testing.T) {

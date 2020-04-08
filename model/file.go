@@ -8,8 +8,8 @@ package model
 import (
 	"errors"
 
-	"maze.io/x/unipdf/v3/common"
-	"maze.io/x/unipdf/v3/core"
+	"maze.io/x/unipdf/common"
+	"maze.io/x/unipdf/core"
 )
 
 // (Section 7.11.3 p. 102).

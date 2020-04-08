@@ -9,7 +9,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"maze.io/x/unipdf/v3/core"
+	"maze.io/x/unipdf/core"
 )
 
 // ContentStreamOperation represents an operation in PDF contentstream which consists of

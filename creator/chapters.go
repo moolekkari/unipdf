@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"maze.io/x/unipdf/v3/common"
-	"maze.io/x/unipdf/v3/model"
+	"maze.io/x/unipdf/common"
+	"maze.io/x/unipdf/model"
 )
 
 // Chapter is used to arrange multiple drawables (paragraphs, images, etc) into a single section.

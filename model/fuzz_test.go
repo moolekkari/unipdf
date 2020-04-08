@@ -8,7 +8,7 @@ package model
 import (
 	"testing"
 
-	"maze.io/x/unipdf/v3/core"
+	"maze.io/x/unipdf/core"
 )
 
 // Test for an endless recursive loop in

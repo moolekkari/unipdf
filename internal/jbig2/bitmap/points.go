@@ -8,8 +8,8 @@ package bitmap
 import (
 	"sort"
 
-	"maze.io/x/unipdf/v3/internal/jbig2/basic"
-	"maze.io/x/unipdf/v3/internal/jbig2/errors"
+	"maze.io/x/unipdf/internal/jbig2/basic"
+	"maze.io/x/unipdf/internal/jbig2/errors"
 )
 
 // Point is the basic structure that contains x, y float32 values.

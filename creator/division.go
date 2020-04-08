@@ -8,7 +8,7 @@ package creator
 import (
 	"errors"
 
-	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/common"
 )
 
 // Division is a container component which can wrap across multiple pages (unlike Block).

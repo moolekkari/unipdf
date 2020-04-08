@@ -10,7 +10,7 @@ import (
 	"errors"
 	"io"
 
-	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/common"
 )
 
 // Offset reader encapsulates io.ReadSeeker and offsets it by the specified

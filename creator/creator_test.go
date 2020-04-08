@@ -30,11 +30,11 @@ import (
 	"github.com/boombuler/barcode/qr"
 	"github.com/stretchr/testify/require"
 
-	"maze.io/x/unipdf/v3/common"
-	"maze.io/x/unipdf/v3/contentstream/draw"
-	"maze.io/x/unipdf/v3/core"
-	"maze.io/x/unipdf/v3/model"
-	"maze.io/x/unipdf/v3/model/optimize"
+	"maze.io/x/unipdf/common"
+	"maze.io/x/unipdf/contentstream/draw"
+	"maze.io/x/unipdf/core"
+	"maze.io/x/unipdf/model"
+	"maze.io/x/unipdf/model/optimize"
 )
 
 func init() {

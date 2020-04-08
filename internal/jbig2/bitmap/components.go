@@ -8,10 +8,10 @@ package bitmap
 import (
 	"image"
 
-	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/common"
 
-	"maze.io/x/unipdf/v3/internal/jbig2/basic"
-	"maze.io/x/unipdf/v3/internal/jbig2/errors"
+	"maze.io/x/unipdf/internal/jbig2/basic"
+	"maze.io/x/unipdf/internal/jbig2/errors"
 )
 
 // Component is the component definition enum.

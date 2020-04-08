@@ -11,10 +11,10 @@ import (
 	"github.com/golang/freetype/truetype"
 	"golang.org/x/image/font"
 
-	"maze.io/x/unipdf/v3/core"
-	"maze.io/x/unipdf/v3/model"
+	"maze.io/x/unipdf/core"
+	"maze.io/x/unipdf/model"
 
-	"maze.io/x/unipdf/v3/internal/textencoding"
+	"maze.io/x/unipdf/internal/textencoding"
 )
 
 // TextFont represents a font used to draw text to a target, through a

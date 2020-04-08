@@ -13,7 +13,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"maze.io/x/unipdf/v3/internal/jbig2/bitmap"
+	"maze.io/x/unipdf/internal/jbig2/bitmap"
 )
 
 // TestImageToJBIG2Image tests conversion of image.Image to JBIG2Image

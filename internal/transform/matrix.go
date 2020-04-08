@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"math"
 
-	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/common"
 )
 
 // Matrix is a linear transform matrix in homogenous coordinates.

@@ -10,9 +10,9 @@ import (
 	"sort"
 	"strings"
 
-	"maze.io/x/unipdf/v3/common"
-	"maze.io/x/unipdf/v3/core"
-	"maze.io/x/unipdf/v3/internal/cmap/bcmaps"
+	"maze.io/x/unipdf/common"
+	"maze.io/x/unipdf/core"
+	"maze.io/x/unipdf/internal/cmap/bcmaps"
 )
 
 const (

@@ -6,10 +6,10 @@
 package extractor
 
 import (
-	"maze.io/x/unipdf/v3/common"
-	"maze.io/x/unipdf/v3/contentstream"
-	"maze.io/x/unipdf/v3/core"
-	"maze.io/x/unipdf/v3/model"
+	"maze.io/x/unipdf/common"
+	"maze.io/x/unipdf/contentstream"
+	"maze.io/x/unipdf/core"
+	"maze.io/x/unipdf/model"
 )
 
 // ImageExtractOptions contains options for controlling image extraction from

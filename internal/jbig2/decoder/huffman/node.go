@@ -11,7 +11,7 @@ import (
 	"math"
 	"strings"
 
-	"maze.io/x/unipdf/v3/internal/jbig2/reader"
+	"maze.io/x/unipdf/internal/jbig2/reader"
 )
 
 // Node is the interface defined for all huffman tree nodes.

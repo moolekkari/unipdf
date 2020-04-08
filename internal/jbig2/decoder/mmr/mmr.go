@@ -8,8 +8,8 @@ package mmr
 import (
 	"errors"
 
-	"maze.io/x/unipdf/v3/internal/jbig2/bitmap"
-	"maze.io/x/unipdf/v3/internal/jbig2/reader"
+	"maze.io/x/unipdf/internal/jbig2/bitmap"
+	"maze.io/x/unipdf/internal/jbig2/reader"
 )
 
 // Decoder is the jbig2 mmr data decoder.

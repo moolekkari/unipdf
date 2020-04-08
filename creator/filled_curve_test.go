@@ -8,7 +8,7 @@ package creator
 import (
 	"testing"
 
-	"maze.io/x/unipdf/v3/contentstream/draw"
+	"maze.io/x/unipdf/contentstream/draw"
 )
 
 func CreateFillCurve(x0, y0, x1, y1, x2, y2, x3, y3 float64) draw.CubicBezierCurve {

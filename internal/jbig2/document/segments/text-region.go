@@ -11,16 +11,16 @@ import (
 	"math"
 	"strings"
 
-	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/common"
 
-	"maze.io/x/unipdf/v3/internal/jbig2/basic"
-	"maze.io/x/unipdf/v3/internal/jbig2/bitmap"
-	"maze.io/x/unipdf/v3/internal/jbig2/decoder/arithmetic"
-	"maze.io/x/unipdf/v3/internal/jbig2/decoder/huffman"
-	encoder "maze.io/x/unipdf/v3/internal/jbig2/encoder/arithmetic"
-	"maze.io/x/unipdf/v3/internal/jbig2/errors"
-	"maze.io/x/unipdf/v3/internal/jbig2/reader"
-	"maze.io/x/unipdf/v3/internal/jbig2/writer"
+	"maze.io/x/unipdf/internal/jbig2/basic"
+	"maze.io/x/unipdf/internal/jbig2/bitmap"
+	"maze.io/x/unipdf/internal/jbig2/decoder/arithmetic"
+	"maze.io/x/unipdf/internal/jbig2/decoder/huffman"
+	encoder "maze.io/x/unipdf/internal/jbig2/encoder/arithmetic"
+	"maze.io/x/unipdf/internal/jbig2/errors"
+	"maze.io/x/unipdf/internal/jbig2/reader"
+	"maze.io/x/unipdf/internal/jbig2/writer"
 )
 
 // TextRegion is the model for the jbig2 text region segment - see 7.4.1.

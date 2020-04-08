@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"io"
 
-	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/common"
 )
 
 func init() {

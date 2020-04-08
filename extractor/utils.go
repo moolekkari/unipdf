@@ -9,8 +9,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"maze.io/x/unipdf/v3/common/license"
-	"maze.io/x/unipdf/v3/core"
+	"maze.io/x/unipdf/common/license"
+	"maze.io/x/unipdf/core"
 )
 
 // RenderMode specifies the text rendering mode (Tmode), which determines whether showing text shall cause

@@ -20,12 +20,12 @@ import (
 	"path/filepath"
 	"strings"
 
-	"maze.io/x/unipdf/v3/common"
-	"maze.io/x/unipdf/v3/contentstream"
-	"maze.io/x/unipdf/v3/core"
-	"maze.io/x/unipdf/v3/model"
+	"maze.io/x/unipdf/common"
+	"maze.io/x/unipdf/contentstream"
+	"maze.io/x/unipdf/core"
+	"maze.io/x/unipdf/model"
 
-	"maze.io/x/unipdf/v3/internal/jbig2/document"
+	"maze.io/x/unipdf/internal/jbig2/document"
 )
 
 // register basic image drivers - gif, jpeg, png

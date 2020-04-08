@@ -12,8 +12,8 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"maze.io/x/unipdf/v3/common"
-	"maze.io/x/unipdf/v3/model"
+	"maze.io/x/unipdf/common"
+	"maze.io/x/unipdf/model"
 )
 
 // Split tests splits a single page from a PDF, writes out and performs a sanity check on the output with ghostscript.

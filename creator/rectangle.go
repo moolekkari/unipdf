@@ -6,8 +6,8 @@
 package creator
 
 import (
-	"maze.io/x/unipdf/v3/contentstream/draw"
-	"maze.io/x/unipdf/v3/model"
+	"maze.io/x/unipdf/contentstream/draw"
+	"maze.io/x/unipdf/model"
 )
 
 // Rectangle defines a rectangle with upper left corner at (x,y) and a specified width and height.  The rectangle

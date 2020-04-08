@@ -33,9 +33,9 @@ import (
 
 	lzw1 "golang.org/x/image/tiff/lzw"
 
-	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/common"
 
-	"maze.io/x/unipdf/v3/internal/ccittfax"
+	"maze.io/x/unipdf/internal/ccittfax"
 )
 
 // Stream encoding filter names.

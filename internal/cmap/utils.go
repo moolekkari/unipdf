@@ -8,7 +8,7 @@ package cmap
 import (
 	"unicode/utf16"
 
-	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/common"
 )
 
 // hexToCharCode returns the integer that is encoded in `shex` as a big-endian hex value

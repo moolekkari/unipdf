@@ -11,7 +11,7 @@ import (
 	"os"
 	"sort"
 
-	"maze.io/x/unipdf/v3/core"
+	"maze.io/x/unipdf/core"
 )
 
 // Data represents forms data format (FDF) file data.
