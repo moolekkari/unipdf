@@ -13,8 +13,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/internal/strutils"
+	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/internal/strutils"
 )
 
 // PdfObject is an interface which all primitive PDF objects must implement.

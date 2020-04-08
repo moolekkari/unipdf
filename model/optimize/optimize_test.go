@@ -11,8 +11,8 @@ import (
 	"io"
 	"testing"
 
-	"github.com/unidoc/unipdf/v3/core"
-	"github.com/unidoc/unipdf/v3/model/optimize"
+	"maze.io/x/unipdf/v3/core"
+	"maze.io/x/unipdf/v3/model/optimize"
 )
 
 // parseIndirectObjects parses a sequence of indirect/stream objects sequentially from a `rawpdf` text.

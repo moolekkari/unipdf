@@ -8,9 +8,9 @@ package writer
 import (
 	"io"
 
-	"github.com/unidoc/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/common"
 
-	"github.com/unidoc/unipdf/v3/internal/jbig2/errors"
+	"maze.io/x/unipdf/v3/internal/jbig2/errors"
 )
 
 const (

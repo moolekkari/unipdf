@@ -12,8 +12,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/unidoc/unipdf/v3/core"
-	"github.com/unidoc/unipdf/v3/model"
+	"maze.io/x/unipdf/v3/core"
+	"maze.io/x/unipdf/v3/model"
 )
 
 // The allobjects test probes through all objects in PDF files of a specified corpus, decoding streams.

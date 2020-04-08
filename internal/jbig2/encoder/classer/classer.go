@@ -8,11 +8,11 @@ package classer
 import (
 	"image"
 
-	"github.com/unidoc/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/common"
 
-	"github.com/unidoc/unipdf/v3/internal/jbig2/basic"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/bitmap"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/errors"
+	"maze.io/x/unipdf/v3/internal/jbig2/basic"
+	"maze.io/x/unipdf/v3/internal/jbig2/bitmap"
+	"maze.io/x/unipdf/v3/internal/jbig2/errors"
 )
 
 // Classer holds all the data accumulated during the classification

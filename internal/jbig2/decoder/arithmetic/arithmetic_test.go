@@ -10,9 +10,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/unidoc/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/common"
 
-	"github.com/unidoc/unipdf/v3/internal/jbig2/reader"
+	"maze.io/x/unipdf/v3/internal/jbig2/reader"
 )
 
 // TestArithmeticDecoder tests the arithmetic decoder with the Apendix A methods.

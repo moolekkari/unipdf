@@ -9,8 +9,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/core"
+	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/core"
 )
 
 // OutlineDest represents the destination of an outline item.

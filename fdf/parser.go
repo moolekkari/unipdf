@@ -17,8 +17,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/core"
+	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/core"
 )
 
 // Regular Expressions for parsing and identifying object signatures.

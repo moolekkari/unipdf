@@ -6,7 +6,7 @@
 package context
 
 import (
-	"github.com/unidoc/unipdf/v3/internal/transform"
+	"maze.io/x/unipdf/v3/internal/transform"
 )
 
 // TextState holds a representation of a PDF text state. The text state

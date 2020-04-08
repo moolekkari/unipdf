@@ -12,12 +12,12 @@ import (
 	"io/ioutil"
 	"sort"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/core"
+	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/core"
 
-	"github.com/unidoc/unipdf/v3/internal/cmap"
-	"github.com/unidoc/unipdf/v3/internal/textencoding"
-	"github.com/unidoc/unipdf/v3/model/internal/fonts"
+	"maze.io/x/unipdf/v3/internal/cmap"
+	"maze.io/x/unipdf/v3/internal/textencoding"
+	"maze.io/x/unipdf/v3/model/internal/fonts"
 )
 
 /*

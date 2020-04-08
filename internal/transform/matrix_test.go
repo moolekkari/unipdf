@@ -9,7 +9,7 @@ import (
 	"math"
 	"testing"
 
-	"github.com/unidoc/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/common"
 )
 
 func init() {

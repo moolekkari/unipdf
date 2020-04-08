@@ -8,7 +8,7 @@ package bitmap
 import (
 	"image"
 
-	"github.com/unidoc/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/common"
 )
 
 // CombineBytes combines the provided bytes with respect to the CombinationOperator.

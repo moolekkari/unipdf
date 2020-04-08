@@ -11,8 +11,8 @@ import (
 	"sync"
 	"unicode/utf8"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/core"
+	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/core"
 	"golang.org/x/text/encoding"
 	xtransform "golang.org/x/text/transform"
 )

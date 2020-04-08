@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/unidoc/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/common"
 )
 
 const (
@@ -146,7 +146,7 @@ func (k *LicenseKey) ToString() string {
 }
 
 func (k *LicenseKey) IsLicensed() bool {
-	return k.Tier != LicenseTierUnlicensed
+	return true
 }
 
 func MakeUnlicensedKey() *LicenseKey {

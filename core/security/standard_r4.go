@@ -13,7 +13,7 @@ import (
 	"encoding/binary"
 	"errors"
 
-	"github.com/unidoc/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/common"
 )
 
 var _ StdHandler = stdHandlerR4{}

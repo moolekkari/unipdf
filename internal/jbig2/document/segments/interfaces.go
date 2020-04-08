@@ -6,9 +6,9 @@
 package segments
 
 import (
-	"github.com/unidoc/unipdf/v3/internal/jbig2/bitmap"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/reader"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/writer"
+	"maze.io/x/unipdf/v3/internal/jbig2/bitmap"
+	"maze.io/x/unipdf/v3/internal/jbig2/reader"
+	"maze.io/x/unipdf/v3/internal/jbig2/writer"
 )
 
 // Documenter is the interface used for the document model.

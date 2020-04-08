@@ -18,7 +18,7 @@ import (
 	"strings"
 	"time"
 
-	_ "github.com/unidoc/unipdf/v3/common"
+	_ "maze.io/x/unipdf/v3/common"
 )
 
 const (

@@ -8,8 +8,8 @@ package model
 import (
 	"fmt"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/core"
+	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/core"
 )
 
 // PdfOutlineTreeNode contains common fields used by the outline and outline

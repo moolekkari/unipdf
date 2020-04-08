@@ -11,11 +11,11 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/contentstream"
-	"github.com/unidoc/unipdf/v3/core"
-	"github.com/unidoc/unipdf/v3/internal/textencoding"
-	"github.com/unidoc/unipdf/v3/model"
+	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/contentstream"
+	"maze.io/x/unipdf/v3/core"
+	"maze.io/x/unipdf/v3/internal/textencoding"
+	"maze.io/x/unipdf/v3/model"
 )
 
 // FieldAppearance implements interface model.FieldAppearanceGenerator and generates appearance streams

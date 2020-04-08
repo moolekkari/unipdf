@@ -18,9 +18,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/extractor"
-	"github.com/unidoc/unipdf/v3/model"
+	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/extractor"
+	"maze.io/x/unipdf/v3/model"
 )
 
 // Extract images test writes out a zip file containing all images extracted

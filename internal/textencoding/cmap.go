@@ -8,8 +8,8 @@ package textencoding
 import (
 	"bytes"
 
-	"github.com/unidoc/unipdf/v3/core"
-	"github.com/unidoc/unipdf/v3/internal/cmap"
+	"maze.io/x/unipdf/v3/core"
+	"maze.io/x/unipdf/v3/internal/cmap"
 )
 
 // CMapEncoder encodes/decodes strings based on CMap mappings.

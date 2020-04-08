@@ -20,11 +20,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/common/license"
-	"github.com/unidoc/unipdf/v3/core"
-	"github.com/unidoc/unipdf/v3/core/security"
-	"github.com/unidoc/unipdf/v3/core/security/crypt"
+	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/common/license"
+	"maze.io/x/unipdf/v3/core"
+	"maze.io/x/unipdf/v3/core/security"
+	"maze.io/x/unipdf/v3/core/security/crypt"
 )
 
 var pdfAuthor = ""

@@ -6,7 +6,7 @@
 package optimize
 
 import (
-	"github.com/unidoc/unipdf/v3/core"
+	"maze.io/x/unipdf/v3/core"
 )
 
 // ObjectStreams groups PDF objects to object streams.

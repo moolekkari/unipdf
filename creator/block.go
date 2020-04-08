@@ -11,10 +11,10 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/contentstream"
-	"github.com/unidoc/unipdf/v3/core"
-	"github.com/unidoc/unipdf/v3/model"
+	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/contentstream"
+	"maze.io/x/unipdf/v3/core"
+	"maze.io/x/unipdf/v3/model"
 )
 
 // Block contains a portion of PDF Page contents. It has a width and a position and can

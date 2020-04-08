@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/unidoc/unipdf/v3/model"
+	"maze.io/x/unipdf/v3/model"
 )
 
 func TestListSimple(t *testing.T) {

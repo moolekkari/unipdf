@@ -17,9 +17,9 @@ import (
 
 	"flag"
 
-	pdfcommon "github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/internal/fonts"
-	"github.com/unidoc/unipdf/v3/model"
+	pdfcommon "maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/internal/fonts"
+	"maze.io/x/unipdf/v3/model"
 )
 
 func main() {

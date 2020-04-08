@@ -17,9 +17,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/core"
-	"github.com/unidoc/unipdf/v3/creator"
+	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/core"
+	"maze.io/x/unipdf/v3/creator"
 )
 
 // TestImageEncodeJBIG2PDF tests the encode process for the JBIG2 encoder into PDF file.

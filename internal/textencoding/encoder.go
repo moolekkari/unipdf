@@ -8,8 +8,8 @@ package textencoding
 import (
 	"encoding/binary"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/core"
+	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/core"
 )
 
 // CharCode is a character code used in the specific encoding.

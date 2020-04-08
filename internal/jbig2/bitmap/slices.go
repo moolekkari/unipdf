@@ -10,9 +10,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/basic"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/errors"
+	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/internal/jbig2/basic"
+	"maze.io/x/unipdf/v3/internal/jbig2/errors"
 )
 
 // Bitmaps is the structure that contains slice of the bitmaps and the bounding boxes.

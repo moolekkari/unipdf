@@ -8,8 +8,8 @@ package bitmap
 import (
 	"image"
 
-	"github.com/unidoc/unipdf/v3/internal/jbig2/basic"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/errors"
+	"maze.io/x/unipdf/v3/internal/jbig2/basic"
+	"maze.io/x/unipdf/v3/internal/jbig2/errors"
 )
 
 // maxIterations is a constant used to prevent infitite loops.

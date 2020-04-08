@@ -10,14 +10,14 @@ import (
 	"io"
 	"runtime/debug"
 
-	"github.com/unidoc/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/common"
 
-	"github.com/unidoc/unipdf/v3/internal/jbig2/bitmap"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/document/segments"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/encoder/classer"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/errors"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/reader"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/writer"
+	"maze.io/x/unipdf/v3/internal/jbig2/bitmap"
+	"maze.io/x/unipdf/v3/internal/jbig2/document/segments"
+	"maze.io/x/unipdf/v3/internal/jbig2/encoder/classer"
+	"maze.io/x/unipdf/v3/internal/jbig2/errors"
+	"maze.io/x/unipdf/v3/internal/jbig2/reader"
+	"maze.io/x/unipdf/v3/internal/jbig2/writer"
 )
 
 // fileHeaderID first byte slices of the jbig2 encoded file, see D.4.1.

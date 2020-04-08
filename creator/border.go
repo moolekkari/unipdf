@@ -1,8 +1,8 @@
 package creator
 
 import (
-	"github.com/unidoc/unipdf/v3/contentstream/draw"
-	"github.com/unidoc/unipdf/v3/model"
+	"maze.io/x/unipdf/v3/contentstream/draw"
+	"maze.io/x/unipdf/v3/model"
 )
 
 // border represents cell border.

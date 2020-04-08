@@ -15,7 +15,7 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/unidoc/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/common"
 )
 
 // Check slice range to make sure within bounds for accessing:

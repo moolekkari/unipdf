@@ -8,8 +8,8 @@ package creator
 import (
 	"os"
 
-	"github.com/unidoc/unipdf/v3/contentstream/draw"
-	"github.com/unidoc/unipdf/v3/model"
+	"maze.io/x/unipdf/v3/contentstream/draw"
+	"maze.io/x/unipdf/v3/model"
 )
 
 // Loads the template from path as a list of pages.

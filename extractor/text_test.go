@@ -20,10 +20,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/creator"
-	"github.com/unidoc/unipdf/v3/internal/transform"
-	"github.com/unidoc/unipdf/v3/model"
+	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/creator"
+	"maze.io/x/unipdf/v3/internal/transform"
+	"maze.io/x/unipdf/v3/model"
 	"golang.org/x/text/unicode/norm"
 )
 

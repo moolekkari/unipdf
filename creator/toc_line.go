@@ -8,7 +8,7 @@ package creator
 import (
 	"strings"
 
-	"github.com/unidoc/unipdf/v3/model"
+	"maze.io/x/unipdf/v3/model"
 )
 
 // TOCLine represents a line in a table of contents.

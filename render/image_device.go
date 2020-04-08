@@ -16,8 +16,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/unidoc/unipdf/v3/model"
-	"github.com/unidoc/unipdf/v3/render/internal/context/imagerender"
+	"maze.io/x/unipdf/v3/model"
+	"maze.io/x/unipdf/v3/render/internal/context/imagerender"
 )
 
 // ImageDevice is used to render PDF pages to image targets.

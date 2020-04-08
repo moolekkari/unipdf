@@ -11,11 +11,11 @@ import (
 	goimage "image"
 	"os"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/contentstream"
-	"github.com/unidoc/unipdf/v3/contentstream/draw"
-	"github.com/unidoc/unipdf/v3/core"
-	"github.com/unidoc/unipdf/v3/model"
+	"maze.io/x/unipdf/v3/common"
+	"maze.io/x/unipdf/v3/contentstream"
+	"maze.io/x/unipdf/v3/contentstream/draw"
+	"maze.io/x/unipdf/v3/core"
+	"maze.io/x/unipdf/v3/model"
 )
 
 // The Image type is used to draw an image onto PDF.

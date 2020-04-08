@@ -6,8 +6,8 @@
 package optimize
 
 import (
-	"github.com/unidoc/unipdf/v3/core"
-	"github.com/unidoc/unipdf/v3/model"
+	"maze.io/x/unipdf/v3/core"
+	"maze.io/x/unipdf/v3/model"
 )
 
 // Chain allows to use sequence of optimizers.
