@@ -1,8 +1,3 @@
-/*
- * This file is subject to the terms and conditions defined in
- * file 'LICENSE.md', which is part of this source code package.
- */
-
 // Package contentstream provides functionality for parsing and creating content streams for PDF files.
 //
 // For processing and manipulating content streams, it allows parse the content stream into a list of

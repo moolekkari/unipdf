@@ -1,8 +1,3 @@
-/*
- * This file is subject to the terms and conditions defined in
- * file 'LICENSE.md', which is part of this source code package.
- */
-
 package arithmetic
 
 import (
@@ -15,8 +10,6 @@ import (
 	"maze.io/x/unipdf/internal/jbig2/decoder/arithmetic"
 	"maze.io/x/unipdf/internal/jbig2/reader"
 )
-
-
 
 // TestEncoder tests the encoder using the standard H.2 test sequence.
 func TestEncoder(t *testing.T) {

@@ -1,8 +1,3 @@
-/*
- * This file is subject to the terms and conditions defined in
- * file 'LICENSE.md', which is part of this source code package.
- */
-
 package extractor
 
 import (
@@ -13,12 +8,12 @@ import (
 	"strings"
 	"unicode"
 
+	"golang.org/x/text/unicode/norm"
 	"maze.io/x/unipdf/common"
 	"maze.io/x/unipdf/contentstream"
 	"maze.io/x/unipdf/core"
 	"maze.io/x/unipdf/internal/transform"
 	"maze.io/x/unipdf/model"
-	"golang.org/x/text/unicode/norm"
 )
 
 // ExtractText processes and extracts all text data in content streams and returns as a string.
