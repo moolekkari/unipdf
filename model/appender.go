@@ -1,8 +1,3 @@
-/*
- * This file is subject to the terms and conditions defined in
- * file 'LICENSE.md', which is part of this source code package.
- */
-
 package model
 
 import (
@@ -113,17 +108,17 @@ func NewPdfAppender(reader *PdfReader) (*PdfAppender, error) {
 		parser:    reader.parser,
 		traversed: reader.traversed,
 	}
-	if size, err := a.rs.Seek(0, io.SeekEnd); err != nil {
-		return nil, err
-	} else {
-		a.prevRevisionSize = size
-	}
 
-	if _, err := a.rs.Seek(0, io.SeekStart); err != nil {
+	size, err := a.rs.Seek(0, io.SeekEnd)
+	if err != nil {
 		return nil, err
 	}
 
-	var err error
+	a.prevRevisionSize = size
+
+	if _, err = a.rs.Seek(0, io.SeekStart); err != nil {
+		return nil, err
+	}
 
 	// Create a readonly (immutable) reader. It increases memory use but is necessary to be able
 	// to detect changes in the original reader objects.

@@ -1,8 +1,3 @@
-/*
- * This file is subject to the terms and conditions defined in
- * file 'LICENSE.md', which is part of this source code package.
- */
-
 package model
 
 import (
@@ -65,9 +60,9 @@ func TestGetOutlines(t *testing.T) {
 	dstOutline, err := reader.GetOutlines()
 	require.NoError(t, err)
 
-	srcJson, err := json.Marshal(srcOutline)
+	srcJSON, err := json.Marshal(srcOutline)
 	require.NoError(t, err)
-	dstJson, err := json.Marshal(dstOutline)
+	dstJSON, err := json.Marshal(dstOutline)
 	require.NoError(t, err)
-	require.Equal(t, srcJson, dstJson)
+	require.Equal(t, srcJSON, dstJSON)
 }

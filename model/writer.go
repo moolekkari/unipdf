@@ -1,8 +1,3 @@
-/*
- * This file is subject to the terms and conditions defined in
- * file 'LICENSE.md', which is part of this source code package.
- */
-
 // Default writing implementation.  Basic output with version 1.3
 // for compatibility.
 
@@ -13,7 +8,6 @@ import (
 	"bytes"
 	"encoding/binary"
 	"errors"
-	"flag"
 	"fmt"
 	"io"
 	"sort"
@@ -21,7 +15,7 @@ import (
 	"time"
 
 	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/common/license"
+
 	"maze.io/x/unipdf/core"
 	"maze.io/x/unipdf/core/security"
 	"maze.io/x/unipdf/core/security/crypt"
@@ -30,7 +24,7 @@ import (
 var pdfAuthor = ""
 var pdfCreationDate time.Time
 var pdfCreator = ""
-var pdfKeywords = ""
+var pdfKeywords = []string{""}
 var pdfModifiedDate time.Time
 var pdfProducer = ""
 var pdfSubject = ""
@@ -70,7 +64,7 @@ func getPdfCreator() string {
 	}
 
 	// Return default.
-	return "UniDoc - http://unidoc.io"
+	return "Moole"
 }
 
 // SetPdfCreator sets the Creator attribute of the output PDF.
@@ -79,11 +73,11 @@ func SetPdfCreator(creator string) {
 }
 
 func getPdfKeywords() string {
-	return pdfKeywords
+	return strings.Join(pdfKeywords, ",")
 }
 
 // SetPdfKeywords sets the Keywords attribute of the output PDF.
-func SetPdfKeywords(keywords string) {
+func SetPdfKeywords(keywords ...string) {
 	pdfKeywords = keywords
 }
 
@@ -94,16 +88,6 @@ func getPdfModifiedDate() time.Time {
 // SetPdfModifiedDate sets the ModDate attribute of the output PDF.
 func SetPdfModifiedDate(modifiedDate time.Time) {
 	pdfCreationDate = modifiedDate
-}
-
-func getPdfProducer() string {
-	licenseKey := license.GetLicenseKey()
-	if len(pdfProducer) > 0 && (licenseKey.IsLicensed() || flag.Lookup("test.v") != nil) {
-		return pdfProducer
-	}
-
-	// Return default.
-	return fmt.Sprintf("UniDoc v%s (%s) - http://unidoc.io", getUniDocVersion(), licenseKey.TypeToString())
 }
 
 // SetPdfProducer sets the Producer attribute of the output PDF.
@@ -202,7 +186,7 @@ func NewPdfWriter() PdfWriter {
 		key   core.PdfObjectName
 		value string
 	}{
-		{"Producer", getPdfProducer()},
+		{"Producer", ""}, //getPdfProducer()},
 		{"Creator", getPdfCreator()},
 		{"Author", getPdfAuthor()},
 		{"Subject", getPdfSubject()},
@@ -633,11 +617,6 @@ func (w *PdfWriter) AddPage(page *PdfPage) error {
 }
 
 func procPage(p *PdfPage) {
-	lk := license.GetLicenseKey()
-	if lk != nil && lk.IsLicensed() {
-		return
-	}
-
 	// Add font, if needed.
 	fontName := core.PdfObjectName("UF1")
 	if !p.Resources.HasFontByName(fontName) {
@@ -855,17 +834,17 @@ type EncryptOptions struct {
 type EncryptionAlgorithm int
 
 const (
-	// RC4_128bit uses RC4 encryption (128 bit)
-	RC4_128bit = EncryptionAlgorithm(iota)
-	// AES_128bit uses AES encryption (128 bit, PDF 1.6)
-	AES_128bit
-	// AES_256bit uses AES encryption (256 bit, PDF 2.0)
-	AES_256bit
+	// RC4128bit uses RC4 encryption (128 bit)
+	RC4128bit = EncryptionAlgorithm(iota)
+	// AES128bit uses AES encryption (128 bit, PDF 1.6)
+	AES128bit
+	// AES256bit uses AES encryption (256 bit, PDF 2.0)
+	AES256bit
 )
 
 // Encrypt encrypts the output file with a specified user/owner password.
 func (w *PdfWriter) Encrypt(userPass, ownerPass []byte, options *EncryptOptions) error {
-	algo := RC4_128bit
+	algo := RC4128bit
 	if options != nil {
 		algo = options.Algorithm
 	}
@@ -876,11 +855,11 @@ func (w *PdfWriter) Encrypt(userPass, ownerPass []byte, options *EncryptOptions)
 
 	var cf crypt.Filter
 	switch algo {
-	case RC4_128bit:
+	case RC4128bit:
 		cf = crypt.NewFilterV2(16)
-	case AES_128bit:
+	case AES128bit:
 		cf = crypt.NewFilterAESV2()
-	case AES_256bit:
+	case AES256bit:
 		cf = crypt.NewFilterAESV3()
 	default:
 		return fmt.Errorf("unsupported algorithm: %v", options.Algorithm)
@@ -928,13 +907,6 @@ func (w *PdfWriter) writeBytes(bb []byte) error {
 // Write writes out the PDF.
 func (w *PdfWriter) Write(writer io.Writer) error {
 	common.Log.Trace("Write()")
-
-	lk := license.GetLicenseKey()
-	if lk == nil || !lk.IsLicensed() {
-		fmt.Printf("Unlicensed copy of unidoc\n")
-		fmt.Printf("To get rid of the watermark - Please get a license on https://unidoc.io\n")
-	}
-
 	// Outlines.
 	if w.outlineTree != nil {
 		common.Log.Trace("OutlineTree: %+v", w.outlineTree)
