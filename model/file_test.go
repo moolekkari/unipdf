@@ -1,15 +1,11 @@
-/*
- * This file is subject to the terms and conditions defined in
- * file 'LICENSE.md', which is part of this source code package.
- */
-
 package model
 
 import (
-	"github.com/stretchr/testify/require"
-	"maze.io/x/unipdf/core"
 	"strings"
 	"testing"
+
+	"github.com/stretchr/testify/require"
+	"maze.io/x/unipdf/core"
 )
 
 func TestUrlFileSpec(t *testing.T) {

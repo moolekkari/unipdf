@@ -1,8 +1,3 @@
-/*
- * This file is subject to the terms and conditions defined in
- * file 'LICENSE.md', which is part of this source code package.
- */
-
 package creator
 
 // This test file contains multiple tests to generate PDFs. The outputs are written into /tmp as files.  The files

@@ -1,8 +1,3 @@
-/*
- * This file is subject to the terms and conditions defined in
- * file 'LICENSE.md', which is part of this source code package.
- */
-
 package textencoding
 
 import (
@@ -11,10 +6,10 @@ import (
 	"sync"
 	"unicode/utf8"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/core"
 	"golang.org/x/text/encoding"
 	xtransform "golang.org/x/text/transform"
+	"maze.io/x/unipdf/common"
+	"maze.io/x/unipdf/core"
 )
 
 // SimpleEncoder represents a 1 byte encoding.

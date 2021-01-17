@@ -1,8 +1,3 @@
-/*
- * This file is subject to the terms and conditions defined in
- * file 'LICENSE.md', which is part of this source code package.
- */
-
 package e2etest
 
 import (
@@ -15,8 +10,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 
 	"maze.io/x/unipdf/common"
 	"maze.io/x/unipdf/extractor"

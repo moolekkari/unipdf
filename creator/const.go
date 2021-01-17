@@ -1,8 +1,3 @@
-/*
- * This file is subject to the terms and conditions defined in
- * file 'LICENSE.md', which is part of this source code package.
- */
-
 package creator
 
 // PageSize represents the page size as a 2 element array representing the width and height in PDF document units (points).

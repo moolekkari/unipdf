@@ -1,8 +1,3 @@
-/*
- * This file is subject to the terms and conditions defined in
- * file 'LICENSE.md', which is part of this source code package.
- */
-
 package optimize
 
 import (
@@ -10,11 +5,11 @@ import (
 	"image"
 	"math"
 
+	"golang.org/x/image/draw"
 	"maze.io/x/unipdf/common"
 	"maze.io/x/unipdf/contentstream"
 	"maze.io/x/unipdf/core"
 	"maze.io/x/unipdf/model"
-	"golang.org/x/image/draw"
 )
 
 // ImagePPI optimizes images by scaling images such that the PPI (pixels per inch) is never higher than ImageUpperPPI.

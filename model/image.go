@@ -1,8 +1,3 @@
-/*
- * This file is subject to the terms and conditions defined in
- * file 'LICENSE.md', which is part of this source code package.
- */
-
 package model
 
 import (
@@ -11,6 +6,7 @@ import (
 	goimage "image"
 	gocolor "image/color"
 	"image/draw"
+
 	// Imported for initialization side effects.
 	_ "image/gif"
 	_ "image/png"

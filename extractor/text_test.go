@@ -1,8 +1,3 @@
-/*
- * This file is subject to the terms and conditions defined in
- * file 'LICENSE.md', which is part of this source code package.
- */
-
 package extractor
 
 import (
@@ -20,11 +15,11 @@ import (
 	"strings"
 	"testing"
 
+	"golang.org/x/text/unicode/norm"
 	"maze.io/x/unipdf/common"
 	"maze.io/x/unipdf/creator"
 	"maze.io/x/unipdf/internal/transform"
 	"maze.io/x/unipdf/model"
-	"golang.org/x/text/unicode/norm"
 )
 
 const (

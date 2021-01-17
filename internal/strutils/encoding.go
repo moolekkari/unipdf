@@ -1,8 +1,3 @@
-/*
- * This file is subject to the terms and conditions defined in
- * file 'LICENSE.md', which is part of this source code package.
- */
-
 // Package strutils provides convenient functions for string processing in unidoc internally.
 package strutils
 

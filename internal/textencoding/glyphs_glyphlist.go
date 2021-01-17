@@ -1,8 +1,4 @@
 /*
- * This file is subject to the terms and conditions defined in
- * file 'LICENSE.md', which is part of this source code package.
- */
-/*
  * The embedded glyph to unicode mappings specified in this file are distributed under the terms
  * listed in ./testdata/glyphlist/glyphlist.txt, ./testdata/glyphlist/texglyphlist.txt
  * and ./tesdtdata/glyphlist/addtional.txt
