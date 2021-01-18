@@ -6,11 +6,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"maze.io/x/unipdf/common"
+	"github.com/moolekkari/unipdf/common"
 
-	"maze.io/x/unipdf/internal/jbig2/bitmap"
-	"maze.io/x/unipdf/internal/jbig2/reader"
-	"maze.io/x/unipdf/internal/jbig2/writer"
+	"github.com/moolekkari/unipdf/internal/jbig2/bitmap"
+	"github.com/moolekkari/unipdf/internal/jbig2/reader"
+	"github.com/moolekkari/unipdf/internal/jbig2/writer"
 )
 
 // TestDecodeGenericRegion tests the decode process of the jbig2 Generic Region.

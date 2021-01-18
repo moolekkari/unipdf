@@ -11,7 +11,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"maze.io/x/unipdf/common"
+	"github.com/moolekkari/unipdf/common"
 )
 
 func makeReaderForText(txt string) (*bytes.Reader, *bufio.Reader, int64) {

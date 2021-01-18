@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/core"
 )
 
 func TestReaderLazy(t *testing.T) {

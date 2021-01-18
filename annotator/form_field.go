@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"errors"
 
-	"maze.io/x/unipdf/contentstream"
-	"maze.io/x/unipdf/core"
-	"maze.io/x/unipdf/model"
+	"github.com/moolekkari/unipdf/contentstream"
+	"github.com/moolekkari/unipdf/core"
+	"github.com/moolekkari/unipdf/model"
 )
 
 // TextFieldOptions defines optional parameter for a text field in a form.

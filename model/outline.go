@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/core"
 )
 
 // OutlineDest represents the destination of an outline item.

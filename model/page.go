@@ -13,8 +13,8 @@ import (
 	"fmt"
 	"strings"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/core"
 )
 
 // PdfPage represents a page in a PDF document. (7.7.3.3 - Table 30).

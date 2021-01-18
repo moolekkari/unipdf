@@ -8,11 +8,11 @@ import (
 	"os"
 	"strings"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/core"
 
-	"maze.io/x/unipdf/internal/textencoding"
-	"maze.io/x/unipdf/model/internal/fonts"
+	"github.com/moolekkari/unipdf/internal/textencoding"
+	"github.com/moolekkari/unipdf/model/internal/fonts"
 )
 
 // pdfFontSimple implements pdfFont

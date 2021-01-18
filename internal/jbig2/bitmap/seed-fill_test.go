@@ -6,8 +6,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/internal/jbig2/basic"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/internal/jbig2/basic"
 )
 
 func TestSeedfillBinary(t *testing.T) {

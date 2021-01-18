@@ -15,8 +15,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/core"
 )
 
 // TestGoImageToJBIG2Image tests the core.GoImageToJBIG2Image function.

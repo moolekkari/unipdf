@@ -1,10 +1,10 @@
 package creator
 
 import (
-	pdfcontent "maze.io/x/unipdf/contentstream"
-	"maze.io/x/unipdf/contentstream/draw"
-	pdfcore "maze.io/x/unipdf/core"
-	pdf "maze.io/x/unipdf/model"
+	pdfcontent "github.com/moolekkari/unipdf/contentstream"
+	"github.com/moolekkari/unipdf/contentstream/draw"
+	pdfcore "github.com/moolekkari/unipdf/core"
+	pdf "github.com/moolekkari/unipdf/model"
 )
 
 // FilledCurve represents a closed path of Bezier curves with a border and fill.

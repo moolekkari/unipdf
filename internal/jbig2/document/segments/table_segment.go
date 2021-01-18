@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"math"
 
-	"maze.io/x/unipdf/internal/jbig2/decoder/huffman"
-	"maze.io/x/unipdf/internal/jbig2/reader"
+	"github.com/moolekkari/unipdf/internal/jbig2/decoder/huffman"
+	"github.com/moolekkari/unipdf/internal/jbig2/reader"
 )
 
 // TableSegment is the model used for user defined Huffman Table Segment - see 7.4.13 and appendix B.

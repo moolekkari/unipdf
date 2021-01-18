@@ -9,7 +9,7 @@
 // https://unidoc.io/examples/getting_started/
 //
 // The GoDoc for unipdf provides a detailed breakdown of the API and documentation for packages, types and methods.
-// https://godoc.org/maze.io/x/unipdf
+// https://godoc.org/github.com/moolekkari/unipdf
 //
 // Overview of Major Packages
 //

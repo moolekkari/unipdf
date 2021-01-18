@@ -6,7 +6,7 @@
 package fonts
 
 import (
-	"maze.io/x/unipdf/internal/textencoding"
+	"github.com/moolekkari/unipdf/internal/textencoding"
 )
 
 func init() {

@@ -5,7 +5,7 @@ import (
 	"crypto/rc4"
 	"fmt"
 
-	"maze.io/x/unipdf/common"
+	"github.com/moolekkari/unipdf/common"
 )
 
 func init() {

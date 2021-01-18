@@ -5,7 +5,7 @@ import (
 	"errors"
 	"io"
 
-	"maze.io/x/unipdf/common"
+	"github.com/moolekkari/unipdf/common"
 )
 
 // readAtLeast reads at least n bytes into slice p.

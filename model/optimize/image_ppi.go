@@ -5,11 +5,11 @@ import (
 	"image"
 	"math"
 
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/contentstream"
+	"github.com/moolekkari/unipdf/core"
+	"github.com/moolekkari/unipdf/model"
 	"golang.org/x/image/draw"
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/contentstream"
-	"maze.io/x/unipdf/core"
-	"maze.io/x/unipdf/model"
 )
 
 // ImagePPI optimizes images by scaling images such that the PPI (pixels per inch) is never higher than ImageUpperPPI.

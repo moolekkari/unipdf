@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"strings"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/core"
 )
 
 // FieldFlag represents form field flags. Some of the flags can apply to all types of fields whereas other

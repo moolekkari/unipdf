@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"maze.io/x/unipdf/core"
-	"maze.io/x/unipdf/internal/testutils"
+	"github.com/moolekkari/unipdf/core"
+	"github.com/moolekkari/unipdf/internal/testutils"
 )
 
 // Test loading of a basic checkbox field with a merged-in annotation.

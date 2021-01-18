@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"maze.io/x/unipdf/common"
+	"github.com/moolekkari/unipdf/common"
 )
 
 // TestSubstream tests the SubstreamReader methods.

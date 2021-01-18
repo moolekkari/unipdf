@@ -8,12 +8,12 @@ import (
 	"strings"
 	"unicode"
 
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/contentstream"
+	"github.com/moolekkari/unipdf/core"
+	"github.com/moolekkari/unipdf/internal/transform"
+	"github.com/moolekkari/unipdf/model"
 	"golang.org/x/text/unicode/norm"
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/contentstream"
-	"maze.io/x/unipdf/core"
-	"maze.io/x/unipdf/internal/transform"
-	"maze.io/x/unipdf/model"
 )
 
 // ExtractText processes and extracts all text data in content streams and returns as a string.

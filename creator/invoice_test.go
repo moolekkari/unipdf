@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"maze.io/x/unipdf/model"
+	"github.com/moolekkari/unipdf/model"
 )
 
 func TestInvoiceSimple(t *testing.T) {

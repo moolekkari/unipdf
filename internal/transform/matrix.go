@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math"
 
-	"maze.io/x/unipdf/common"
+	"github.com/moolekkari/unipdf/common"
 )
 
 // Matrix is a linear transform matrix in homogenous coordinates.

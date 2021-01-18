@@ -1,7 +1,7 @@
 package draw
 
 import (
-	pdfcontent "maze.io/x/unipdf/contentstream"
+	pdfcontent "github.com/moolekkari/unipdf/contentstream"
 )
 
 // DrawPathWithCreator makes the path with the content creator.

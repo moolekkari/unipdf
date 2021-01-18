@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"maze.io/x/unipdf/common"
+	"github.com/moolekkari/unipdf/common"
 )
 
 // xrefType indicates the type of a cross-references entry which can be either regular table entry or xref object

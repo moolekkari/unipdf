@@ -15,11 +15,11 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/crypto/pkcs12"
 
-	"maze.io/x/unipdf/annotator"
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/core"
-	"maze.io/x/unipdf/model"
-	"maze.io/x/unipdf/model/sighandler"
+	"github.com/moolekkari/unipdf/annotator"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/core"
+	"github.com/moolekkari/unipdf/model"
+	"github.com/moolekkari/unipdf/model/sighandler"
 )
 
 // This test file contains multiple tests to generate PDFs from existing Pdf files. The outputs are written

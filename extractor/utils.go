@@ -4,8 +4,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"maze.io/x/unipdf/common/license"
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/core"
 )
 
 // RenderMode specifies the text rendering mode (Tmode), which determines whether showing text shall cause
@@ -54,22 +53,9 @@ func procBuf(pt *PageText) {
 		return
 	}
 
-	lk := license.GetLicenseKey()
-	if lk != nil && lk.IsLicensed() {
-		return
-	}
-	fmt.Printf("Unlicensed copy of unidoc\n")
-	fmt.Printf("To get rid of the watermark and keep entire text - Please get a license on https://unidoc.io\n")
-
 	var buf bytes.Buffer
 	buf.WriteString(pt.viewText)
 
-	s := "- [Unlicensed UniDoc - Get a license on https://unidoc.io]"
-	if buf.Len() > 100 {
-		s = "... [Truncated - Unlicensed UniDoc - Get a license on https://unidoc.io]"
-		buf.Truncate(buf.Len() - 100)
-	}
-	buf.WriteString(s)
 	pt.viewText = buf.String()
 
 	if len(pt.marks) > 200 {

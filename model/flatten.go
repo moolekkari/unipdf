@@ -6,8 +6,8 @@ import (
 	"math"
 	"strings"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/core"
 )
 
 // ContentStreamWrapper wraps the Page's contentstream into q ... Q blocks.

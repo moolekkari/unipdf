@@ -4,10 +4,10 @@ import (
 	"errors"
 	"math"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/core"
-	"maze.io/x/unipdf/internal/sampling"
-	"maze.io/x/unipdf/ps"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/core"
+	"github.com/moolekkari/unipdf/internal/sampling"
+	"github.com/moolekkari/unipdf/ps"
 )
 
 // PdfFunction interface represents the common methods of a function in PDF.

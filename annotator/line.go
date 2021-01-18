@@ -1,10 +1,10 @@
 package annotator
 
 import (
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/contentstream/draw"
-	pdfcore "maze.io/x/unipdf/core"
-	pdf "maze.io/x/unipdf/model"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/contentstream/draw"
+	pdfcore "github.com/moolekkari/unipdf/core"
+	pdf "github.com/moolekkari/unipdf/model"
 )
 
 // LineAnnotationDef defines a line between point 1 (X1,Y1) and point 2 (X2,Y2).  The line ending styles can be none

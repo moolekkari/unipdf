@@ -3,7 +3,7 @@ package crypt
 import (
 	"fmt"
 
-	"maze.io/x/unipdf/core/security"
+	"github.com/moolekkari/unipdf/core/security"
 )
 
 var (

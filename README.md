@@ -2,11 +2,11 @@
 ## Installation
 With modules:
 ~~~
-go get maze.io/x/unipdf
+go get github.com/moolekkari/unipdf
 ~~~
 
 With GOPATH:
 ~~~
-go get maze.io/x/unipdf/...
+go get github.com/moolekkari/unipdf/...
 ~~~
 

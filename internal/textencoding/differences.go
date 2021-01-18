@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"sort"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/core"
 )
 
 // FromFontDifferences converts `diffList` (a /Differences array from an /Encoding object) to a map

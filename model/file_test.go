@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/moolekkari/unipdf/core"
 	"github.com/stretchr/testify/require"
-	"maze.io/x/unipdf/core"
 )
 
 func TestUrlFileSpec(t *testing.T) {

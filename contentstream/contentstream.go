@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/core"
 )
 
 // ContentStreamOperation represents an operation in PDF contentstream which consists of

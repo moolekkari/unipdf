@@ -3,8 +3,8 @@ package creator
 import (
 	"os"
 
-	"maze.io/x/unipdf/contentstream/draw"
-	"maze.io/x/unipdf/model"
+	"github.com/moolekkari/unipdf/contentstream/draw"
+	"github.com/moolekkari/unipdf/model"
 )
 
 // Loads the template from path as a list of pages.

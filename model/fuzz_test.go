@@ -3,7 +3,7 @@ package model
 import (
 	"testing"
 
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/core"
 )
 
 // Test for an endless recursive loop in

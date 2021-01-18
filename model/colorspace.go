@@ -6,8 +6,8 @@ import (
 	"image/color"
 	"math"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/core"
 )
 
 // PdfColorspace interface defines the common methods of a PDF colorspace.
@@ -2396,7 +2396,7 @@ func (cs *PdfColorspaceSpecialIndexed) ImageToRGB(img Image) (Image, error) {
 	baseImage.Width = img.Width
 	baseImage.alphaData = img.alphaData
 	// TODO(peterwilliams97): Add support for other BitsPerComponent values.
-	// See https://maze.io/x/unipdf/issues/260
+	// See https://github.com/moolekkari/unipdf/issues/260
 	baseImage.BitsPerComponent = 8
 	baseImage.hasAlpha = img.hasAlpha
 	baseImage.ColorComponents = cs.Base.GetNumComponents()

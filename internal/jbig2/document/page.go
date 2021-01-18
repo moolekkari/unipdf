@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"math"
 
-	"maze.io/x/unipdf/common"
+	"github.com/moolekkari/unipdf/common"
 
-	"maze.io/x/unipdf/internal/jbig2/basic"
-	"maze.io/x/unipdf/internal/jbig2/bitmap"
-	"maze.io/x/unipdf/internal/jbig2/document/segments"
-	"maze.io/x/unipdf/internal/jbig2/errors"
-	"maze.io/x/unipdf/internal/jbig2/writer"
+	"github.com/moolekkari/unipdf/internal/jbig2/basic"
+	"github.com/moolekkari/unipdf/internal/jbig2/bitmap"
+	"github.com/moolekkari/unipdf/internal/jbig2/document/segments"
+	"github.com/moolekkari/unipdf/internal/jbig2/errors"
+	"github.com/moolekkari/unipdf/internal/jbig2/writer"
 )
 
 // EncodingMethod defines the method of encoding for given page,

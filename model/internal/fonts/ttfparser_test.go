@@ -4,7 +4,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"maze.io/x/unipdf/internal/textencoding"
+	"github.com/moolekkari/unipdf/internal/textencoding"
 )
 
 const fontDir = `../../../creator/testdata`

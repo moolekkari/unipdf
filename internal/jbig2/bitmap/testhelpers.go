@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"maze.io/x/unipdf/internal/jbig2/errors"
+	"github.com/moolekkari/unipdf/internal/jbig2/errors"
 )
 
 var (

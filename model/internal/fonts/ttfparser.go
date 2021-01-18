@@ -38,10 +38,10 @@ import (
 	"sort"
 	"strings"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/core"
-	"maze.io/x/unipdf/internal/cmap"
-	"maze.io/x/unipdf/internal/textencoding"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/core"
+	"github.com/moolekkari/unipdf/internal/cmap"
+	"github.com/moolekkari/unipdf/internal/textencoding"
 )
 
 // MakeEncoder returns an encoder built from the tables in `rec`.

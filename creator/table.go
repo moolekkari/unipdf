@@ -5,10 +5,10 @@ import (
 	"math"
 	"sort"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/contentstream/draw"
-	"maze.io/x/unipdf/core"
-	"maze.io/x/unipdf/model"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/contentstream/draw"
+	"github.com/moolekkari/unipdf/core"
+	"github.com/moolekkari/unipdf/model"
 )
 
 // Table allows organizing content in an rows X columns matrix, which can spawn across multiple pages.

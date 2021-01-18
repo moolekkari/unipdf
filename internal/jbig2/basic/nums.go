@@ -1,7 +1,7 @@
 package basic
 
 import (
-	"maze.io/x/unipdf/internal/jbig2/errors"
+	"github.com/moolekkari/unipdf/internal/jbig2/errors"
 )
 
 // IntSlice is the integer slice that contains panic safe methods.

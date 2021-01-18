@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"maze.io/x/unipdf/model"
+	"github.com/moolekkari/unipdf/model"
 )
 
 var seed = rand.New(rand.NewSource(time.Now().UnixNano()))

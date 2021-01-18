@@ -1,8 +1,8 @@
 package document
 
 import (
-	"maze.io/x/unipdf/internal/jbig2/document/segments"
-	"maze.io/x/unipdf/internal/jbig2/errors"
+	"github.com/moolekkari/unipdf/internal/jbig2/document/segments"
+	"github.com/moolekkari/unipdf/internal/jbig2/errors"
 )
 
 // Globals store segments that aren't associated to a page.

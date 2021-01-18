@@ -1,7 +1,7 @@
 package extractor
 
 import (
-	"maze.io/x/unipdf/model"
+	"github.com/moolekkari/unipdf/model"
 )
 
 // Extractor stores and offers functionality for extracting content from PDF pages.

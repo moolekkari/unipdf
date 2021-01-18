@@ -4,8 +4,8 @@ import (
 	"sort"
 	"testing"
 
-	"maze.io/x/unipdf/core"
-	"maze.io/x/unipdf/model/internal/fonts"
+	"github.com/moolekkari/unipdf/core"
+	"github.com/moolekkari/unipdf/model/internal/fonts"
 )
 
 func TestCIDWidthArr(t *testing.T) {

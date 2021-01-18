@@ -5,7 +5,7 @@ import (
 	"math"
 	"sort"
 
-	"maze.io/x/unipdf/render/internal/context"
+	"github.com/moolekkari/unipdf/render/internal/context"
 )
 
 type stop struct {

@@ -5,8 +5,8 @@ package core
 import (
 	"testing"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/core/security"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/core/security"
 )
 
 func init() {

@@ -8,7 +8,7 @@ import (
 	"encoding/binary"
 	"errors"
 
-	"maze.io/x/unipdf/common"
+	"github.com/moolekkari/unipdf/common"
 )
 
 var _ StdHandler = stdHandlerR4{}

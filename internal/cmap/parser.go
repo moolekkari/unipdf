@@ -8,8 +8,8 @@ import (
 	"io"
 	"strconv"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/core"
 )
 
 // cMapParser parses CMap character to unicode mapping files.

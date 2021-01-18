@@ -1,8 +1,8 @@
 package textencoding
 
 import (
-	"maze.io/x/unipdf/core"
-	"maze.io/x/unipdf/internal/strutils"
+	"github.com/moolekkari/unipdf/core"
+	"github.com/moolekkari/unipdf/internal/strutils"
 )
 
 // UTF16Encoder represents UTF-16 encoding.
