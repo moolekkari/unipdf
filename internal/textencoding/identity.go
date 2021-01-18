@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/core"
 )
 
 // IdentityEncoder represents an 2-byte identity encoding

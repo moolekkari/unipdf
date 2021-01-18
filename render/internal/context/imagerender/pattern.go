@@ -6,7 +6,7 @@ import (
 
 	"github.com/golang/freetype/raster"
 
-	"maze.io/x/unipdf/render/internal/context"
+	"github.com/moolekkari/unipdf/render/internal/context"
 )
 
 type repeatOp int

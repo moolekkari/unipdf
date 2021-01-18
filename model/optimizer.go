@@ -1,7 +1,7 @@
 package model
 
 import (
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/core"
 )
 
 // Optimizer is the interface that performs optimization of PDF object structure for output writing.

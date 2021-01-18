@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/model"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/model"
 )
 
 // Passthrough benchmark loads a PDF, writes back out and performs a sanity check on the output with ghostscript.

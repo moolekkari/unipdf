@@ -3,8 +3,8 @@ package model
 import (
 	"errors"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/core"
 )
 
 // (Section 7.11.3 p. 102).

@@ -1,8 +1,8 @@
 package optimize
 
 import (
-	"maze.io/x/unipdf/core"
-	"maze.io/x/unipdf/model"
+	"github.com/moolekkari/unipdf/core"
+	"github.com/moolekkari/unipdf/model"
 )
 
 // Chain allows to use sequence of optimizers.

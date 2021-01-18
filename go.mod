@@ -1,4 +1,4 @@
-module maze.io/x/unipdf
+module github.com/moolekkari/unipdf
 
 go 1.11
 

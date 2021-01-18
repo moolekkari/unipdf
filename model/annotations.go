@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/core"
 )
 
 // PdfAnnotation represents an annotation in PDF (section 12.5 p. 389).

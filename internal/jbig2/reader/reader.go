@@ -5,7 +5,7 @@ import (
 	"errors"
 	"io"
 
-	"maze.io/x/unipdf/common"
+	"github.com/moolekkari/unipdf/common"
 )
 
 // Reader is the bit reader implementation.

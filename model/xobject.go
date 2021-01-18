@@ -3,8 +3,8 @@ package model
 import (
 	"errors"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/core"
 )
 
 // XObjectForm (Table 95 in 8.10.2).

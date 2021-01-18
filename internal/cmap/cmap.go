@@ -5,9 +5,9 @@ import (
 	"sort"
 	"strings"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/core"
-	"maze.io/x/unipdf/internal/cmap/bcmaps"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/core"
+	"github.com/moolekkari/unipdf/internal/cmap/bcmaps"
 )
 
 const (

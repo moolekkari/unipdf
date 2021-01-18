@@ -10,7 +10,7 @@ import (
 	"sort"
 	"strconv"
 
-	"maze.io/x/unipdf/common"
+	"github.com/moolekkari/unipdf/common"
 )
 
 // Check slice range to make sure within bounds for accessing:

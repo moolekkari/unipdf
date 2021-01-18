@@ -6,7 +6,7 @@ import (
 	"math"
 	"testing"
 
-	"maze.io/x/unipdf/common"
+	"github.com/moolekkari/unipdf/common"
 )
 
 func init() {

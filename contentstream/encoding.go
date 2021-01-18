@@ -7,8 +7,8 @@ import (
 	gocolor "image/color"
 	"image/jpeg"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/core"
 )
 
 // Creates the encoder for the inline image's Filter and DecodeParms.

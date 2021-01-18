@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"time"
 
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/core"
 )
 
 // PdfRectangle is a definition of a rectangle.

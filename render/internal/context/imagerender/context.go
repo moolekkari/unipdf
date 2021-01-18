@@ -11,8 +11,8 @@ import (
 	"golang.org/x/image/font"
 	"golang.org/x/image/math/f64"
 
-	"maze.io/x/unipdf/internal/transform"
-	"maze.io/x/unipdf/render/internal/context"
+	"github.com/moolekkari/unipdf/internal/transform"
+	"github.com/moolekkari/unipdf/render/internal/context"
 )
 
 var (

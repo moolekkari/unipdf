@@ -3,8 +3,8 @@ package cmap
 import (
 	"testing"
 
+	"github.com/moolekkari/unipdf/internal/cmap/bcmaps"
 	"github.com/stretchr/testify/require"
-	"maze.io/x/unipdf/internal/cmap/bcmaps"
 )
 
 func TestIsPredefinedCMap(t *testing.T) {

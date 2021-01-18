@@ -1,9 +1,9 @@
 package bitmap
 
 import (
-	"maze.io/x/unipdf/common"
+	"github.com/moolekkari/unipdf/common"
 
-	"maze.io/x/unipdf/internal/jbig2/errors"
+	"github.com/moolekkari/unipdf/internal/jbig2/errors"
 )
 
 // BoundaryCondition is the global enum variable used to define morph operation boundary conditions.

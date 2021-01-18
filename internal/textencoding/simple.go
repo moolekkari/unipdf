@@ -6,10 +6,10 @@ import (
 	"sync"
 	"unicode/utf8"
 
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/core"
 	"golang.org/x/text/encoding"
 	xtransform "golang.org/x/text/transform"
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/core"
 )
 
 // SimpleEncoder represents a 1 byte encoding.

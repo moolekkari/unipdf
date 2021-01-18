@@ -1,7 +1,7 @@
 package model
 
 import (
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/core"
 )
 
 // PdfModel is a higher level PDF construct which can be collapsed into a PdfObject.

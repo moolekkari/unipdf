@@ -1,10 +1,10 @@
 package jbig2
 
 import (
-	"maze.io/x/unipdf/internal/jbig2/decoder"
-	"maze.io/x/unipdf/internal/jbig2/document"
-	"maze.io/x/unipdf/internal/jbig2/errors"
-	"maze.io/x/unipdf/internal/jbig2/reader"
+	"github.com/moolekkari/unipdf/internal/jbig2/decoder"
+	"github.com/moolekkari/unipdf/internal/jbig2/document"
+	"github.com/moolekkari/unipdf/internal/jbig2/errors"
+	"github.com/moolekkari/unipdf/internal/jbig2/reader"
 )
 
 // DecodeBytes decodes jbig2 'encode' byte slice data, with provided 'parameters' and optional 'globals'.

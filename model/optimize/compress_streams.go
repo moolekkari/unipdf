@@ -1,7 +1,7 @@
 package optimize
 
 import (
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/core"
 )
 
 // CompressStreams compresses uncompressed streams.

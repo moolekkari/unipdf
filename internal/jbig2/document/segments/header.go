@@ -7,12 +7,12 @@ import (
 	"math"
 	"strings"
 
-	"maze.io/x/unipdf/common"
+	"github.com/moolekkari/unipdf/common"
 
-	"maze.io/x/unipdf/internal/jbig2/basic"
-	"maze.io/x/unipdf/internal/jbig2/errors"
-	"maze.io/x/unipdf/internal/jbig2/reader"
-	"maze.io/x/unipdf/internal/jbig2/writer"
+	"github.com/moolekkari/unipdf/internal/jbig2/basic"
+	"github.com/moolekkari/unipdf/internal/jbig2/errors"
+	"github.com/moolekkari/unipdf/internal/jbig2/reader"
+	"github.com/moolekkari/unipdf/internal/jbig2/writer"
 )
 
 // Header is the segment header used to define the segment parameters - see 7.2.

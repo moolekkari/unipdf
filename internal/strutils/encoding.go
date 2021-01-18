@@ -5,7 +5,7 @@ import (
 	"bytes"
 	"unicode/utf16"
 
-	"maze.io/x/unipdf/common"
+	"github.com/moolekkari/unipdf/common"
 )
 
 var pdfdocEncodingRuneMap map[rune]byte

@@ -4,9 +4,9 @@ import (
 	"image"
 	"math"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/internal/jbig2/bitmap"
-	"maze.io/x/unipdf/internal/jbig2/errors"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/internal/jbig2/bitmap"
+	"github.com/moolekkari/unipdf/internal/jbig2/errors"
 )
 
 // JbAddedPixels is the size of the border added around pix of each c.c. for further processing.

@@ -3,9 +3,9 @@ package writer
 import (
 	"io"
 
-	"maze.io/x/unipdf/common"
+	"github.com/moolekkari/unipdf/common"
 
-	"maze.io/x/unipdf/internal/jbig2/errors"
+	"github.com/moolekkari/unipdf/internal/jbig2/errors"
 )
 
 // Writer is the structure used to write bits, bytes into predefined data.

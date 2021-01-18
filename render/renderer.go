@@ -5,13 +5,13 @@ import (
 
 	"github.com/adrg/sysfont"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/contentstream"
-	"maze.io/x/unipdf/core"
-	"maze.io/x/unipdf/model"
-	"maze.io/x/unipdf/render/internal/context"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/contentstream"
+	"github.com/moolekkari/unipdf/core"
+	"github.com/moolekkari/unipdf/model"
+	"github.com/moolekkari/unipdf/render/internal/context"
 
-	"maze.io/x/unipdf/internal/transform"
+	"github.com/moolekkari/unipdf/internal/transform"
 )
 
 var (

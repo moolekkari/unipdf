@@ -3,9 +3,9 @@ package mmr
 import (
 	"io"
 
-	"maze.io/x/unipdf/common"
+	"github.com/moolekkari/unipdf/common"
 
-	"maze.io/x/unipdf/internal/jbig2/reader"
+	"github.com/moolekkari/unipdf/internal/jbig2/reader"
 )
 
 const (

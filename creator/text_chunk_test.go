@@ -3,8 +3,8 @@ package creator
 import (
 	"testing"
 
+	"github.com/moolekkari/unipdf/model"
 	"github.com/stretchr/testify/require"
-	"maze.io/x/unipdf/model"
 )
 
 func TestTextChunkWrap(t *testing.T) {

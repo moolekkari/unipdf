@@ -4,10 +4,10 @@ import (
 	"errors"
 	"fmt"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/core"
-	"maze.io/x/unipdf/internal/transform"
-	"maze.io/x/unipdf/model"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/core"
+	"github.com/moolekkari/unipdf/internal/transform"
+	"github.com/moolekkari/unipdf/model"
 )
 
 // GraphicsState is a basic graphics state implementation for PDF processing.

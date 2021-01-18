@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"io"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/core"
 )
 
 // Hasher is the interface that wraps the basic Write method.

@@ -4,15 +4,15 @@ import (
 	"fmt"
 	"strings"
 
-	"maze.io/x/unipdf/common"
+	"github.com/moolekkari/unipdf/common"
 
-	"maze.io/x/unipdf/internal/jbig2/bitmap"
-	"maze.io/x/unipdf/internal/jbig2/decoder/arithmetic"
-	"maze.io/x/unipdf/internal/jbig2/decoder/mmr"
-	enc "maze.io/x/unipdf/internal/jbig2/encoder/arithmetic"
-	"maze.io/x/unipdf/internal/jbig2/errors"
-	"maze.io/x/unipdf/internal/jbig2/reader"
-	"maze.io/x/unipdf/internal/jbig2/writer"
+	"github.com/moolekkari/unipdf/internal/jbig2/bitmap"
+	"github.com/moolekkari/unipdf/internal/jbig2/decoder/arithmetic"
+	"github.com/moolekkari/unipdf/internal/jbig2/decoder/mmr"
+	enc "github.com/moolekkari/unipdf/internal/jbig2/encoder/arithmetic"
+	"github.com/moolekkari/unipdf/internal/jbig2/errors"
+	"github.com/moolekkari/unipdf/internal/jbig2/reader"
+	"github.com/moolekkari/unipdf/internal/jbig2/writer"
 )
 
 // GenericRegion represents a generic region segment.

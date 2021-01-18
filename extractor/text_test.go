@@ -15,11 +15,11 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/creator"
+	"github.com/moolekkari/unipdf/internal/transform"
+	"github.com/moolekkari/unipdf/model"
 	"golang.org/x/text/unicode/norm"
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/creator"
-	"maze.io/x/unipdf/internal/transform"
-	"maze.io/x/unipdf/model"
 )
 
 const (

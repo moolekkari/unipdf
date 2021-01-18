@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 
-	"maze.io/x/unipdf/common"
+	"github.com/moolekkari/unipdf/common"
 )
 
 // parse parses the CMap file and loads into the CMap structure.

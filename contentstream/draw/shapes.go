@@ -3,9 +3,9 @@ package draw
 import (
 	"math"
 
-	pdfcontent "maze.io/x/unipdf/contentstream"
-	pdfcore "maze.io/x/unipdf/core"
-	pdf "maze.io/x/unipdf/model"
+	pdfcontent "github.com/moolekkari/unipdf/contentstream"
+	pdfcore "github.com/moolekkari/unipdf/core"
+	pdf "github.com/moolekkari/unipdf/model"
 )
 
 // Circle represents a circle shape with fill and border properties that can be drawn to a PDF content stream.

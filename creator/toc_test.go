@@ -3,7 +3,7 @@ package creator
 import (
 	"testing"
 
-	"maze.io/x/unipdf/model"
+	"github.com/moolekkari/unipdf/model"
 )
 
 func TestTOCAdvanced(t *testing.T) {

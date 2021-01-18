@@ -3,7 +3,7 @@ package optimize
 import (
 	"crypto/md5"
 
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/core"
 )
 
 // CombineDuplicateStreams combines duplicated streams by its data hash.

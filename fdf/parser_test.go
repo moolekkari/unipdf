@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/core"
 )
 
 const fdfExample1 = `

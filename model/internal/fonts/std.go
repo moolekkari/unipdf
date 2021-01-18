@@ -1,8 +1,8 @@
 package fonts
 
 import (
-	"maze.io/x/unipdf/core"
-	"maze.io/x/unipdf/internal/textencoding"
+	"github.com/moolekkari/unipdf/core"
+	"github.com/moolekkari/unipdf/internal/textencoding"
 )
 
 // StdFontName is a name of a standard font.

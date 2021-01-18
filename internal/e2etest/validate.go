@@ -8,7 +8,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"maze.io/x/unipdf/common"
+	"github.com/moolekkari/unipdf/common"
 )
 
 // To enable ghostscript validation, the path to the binary needs to be specified.

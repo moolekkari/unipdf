@@ -9,8 +9,8 @@ import (
 	"io"
 	"strconv"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/core"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/core"
 )
 
 // ContentStreamParser represents a content stream parser for parsing content streams in PDFs.

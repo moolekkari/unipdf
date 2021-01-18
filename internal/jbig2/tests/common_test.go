@@ -15,12 +15,12 @@ import (
 	"path/filepath"
 	"strings"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/contentstream"
-	"maze.io/x/unipdf/core"
-	"maze.io/x/unipdf/model"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/contentstream"
+	"github.com/moolekkari/unipdf/core"
+	"github.com/moolekkari/unipdf/model"
 
-	"maze.io/x/unipdf/internal/jbig2/document"
+	"github.com/moolekkari/unipdf/internal/jbig2/document"
 )
 
 // register basic image drivers - gif, jpeg, png

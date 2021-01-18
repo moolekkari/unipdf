@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"maze.io/x/unipdf/model"
+	"github.com/moolekkari/unipdf/model"
 )
 
 func TestLoadPDFFormData(t *testing.T) {

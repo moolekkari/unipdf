@@ -3,7 +3,7 @@
 package ps
 
 import (
-	"maze.io/x/unipdf/common"
+	"github.com/moolekkari/unipdf/common"
 )
 
 // PSExecutor has its own execution stack and is used to executre a PS routine (program).

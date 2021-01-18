@@ -7,8 +7,8 @@ import (
 	"os"
 	"strconv"
 
-	"maze.io/x/unipdf/common"
-	"maze.io/x/unipdf/model"
+	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/model"
 )
 
 // Creator is a wrapper around functionality for creating PDF reports and/or adding new

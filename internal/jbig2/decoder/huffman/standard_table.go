@@ -3,7 +3,7 @@ package huffman
 import (
 	"errors"
 
-	"maze.io/x/unipdf/internal/jbig2/reader"
+	"github.com/moolekkari/unipdf/internal/jbig2/reader"
 )
 
 // StandardTable is the structure that defines standard jbig2 table.

@@ -9,9 +9,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"maze.io/x/unipdf/annotator"
-	"maze.io/x/unipdf/fdf"
-	"maze.io/x/unipdf/model"
+	"github.com/moolekkari/unipdf/annotator"
+	"github.com/moolekkari/unipdf/fdf"
+	"github.com/moolekkari/unipdf/model"
 )
 
 // FDF merge tests merge FDF data into template PDF data and flattens to an output PDF file.

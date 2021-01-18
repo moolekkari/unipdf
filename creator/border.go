@@ -1,8 +1,8 @@
 package creator
 
 import (
-	"maze.io/x/unipdf/contentstream/draw"
-	"maze.io/x/unipdf/model"
+	"github.com/moolekkari/unipdf/contentstream/draw"
+	"github.com/moolekkari/unipdf/model"
 )
 
 // border represents cell border.
