@@ -21,12 +21,12 @@ import (
 	"github.com/moolekkari/unipdf/core/security/crypt"
 )
 
-var pdfAuthor = ""
+var pdfAuthor = "Moole PDF Engine"
 var pdfCreationDate time.Time
 var pdfCreator = ""
 var pdfKeywords = []string{""}
 var pdfModifiedDate time.Time
-var pdfProducer = ""
+var pdfProducer = "Moole PDF Engine"
 var pdfSubject = ""
 var pdfTitle = ""
 
@@ -97,6 +97,10 @@ func SetPdfProducer(producer string) {
 
 func getPdfSubject() string {
 	return pdfSubject
+}
+
+func getPdfProducer() string {
+	return pdfProducer
 }
 
 // SetPdfSubject sets the Subject attribute of the output PDF.
@@ -186,7 +190,7 @@ func NewPdfWriter() PdfWriter {
 		key   core.PdfObjectName
 		value string
 	}{
-		{"Producer", ""}, //getPdfProducer()},
+		{"Producer", getPdfProducer()},
 		{"Creator", getPdfCreator()},
 		{"Author", getPdfAuthor()},
 		{"Subject", getPdfSubject()},
