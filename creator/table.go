@@ -341,6 +341,22 @@ func (table *Table) GeneratePageBlocks(ctx DrawContext) ([]*Block, DrawContext, 
 				// Add diff to last row.
 				table.rowHeights[cell.row+cell.rowspan-2] += diffh
 			}
+		case *htmlBlock:
+			t.SetWidth(w - cell.indent)
+			newh := t.Height()
+			if newh > h {
+				diffh := newh - h
+				// Add diff to last row.
+				table.rowHeights[cell.row+cell.rowspan-2] += diffh
+			}
+		case *HTMLContent:
+			t.SetWidth(w - cell.indent)
+			newh := t.Height()
+			if newh > h {
+				diffh := newh - h
+				// Add diff to last row.
+				table.rowHeights[cell.row+cell.rowspan-2] += diffh
+			}
 		case *Image:
 			img := t
 			newh := img.Height() + img.margins.top + img.margins.bottom
@@ -545,6 +561,8 @@ func (table *Table) GeneratePageBlocks(ctx DrawContext) ([]*Block, DrawContext, 
 					// Add a bit of space from the bottom border of the cell.
 					vertOffset -= lineCapHeight * 0.5
 				}
+			case *HTMLContent:
+				cw = w
 			case *Table:
 				cw = w
 			case *List:
@@ -942,6 +960,10 @@ func (cell *TableCell) SetContent(vd VectorDrawable) error {
 	case *List:
 		cell.content = vd
 	case *Division:
+		cell.content = vd
+	case *htmlBlock:
+		cell.content = vd
+	case *HTMLContent:
 		cell.content = vd
 	default:
 		common.Log.Debug("ERROR: unsupported cell content type %T", vd)
