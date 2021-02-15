@@ -181,19 +181,19 @@ func TestTextSort(t *testing.T) {
 	// marks0 is in the expected sort order for tol=15
 	marks0 := []textMark{
 		// y difference > tol => sorts by Y descending
-		textMark{orientedStart: transform.Point{X: 300, Y: 160}, text: "00"},
-		textMark{orientedStart: transform.Point{X: 200, Y: 140}, text: "01"},
-		textMark{orientedStart: transform.Point{X: 100, Y: 120}, text: "02"},
+		{orientedStart: transform.Point{X: 300, Y: 160}, text: "00"},
+		{orientedStart: transform.Point{X: 200, Y: 140}, text: "01"},
+		{orientedStart: transform.Point{X: 100, Y: 120}, text: "02"},
 
 		// y difference < tol => sort by X ascending for approx same Y
-		textMark{orientedStart: transform.Point{X: 100, Y: 30}, text: "10"},
-		textMark{orientedStart: transform.Point{X: 200, Y: 40}, text: "11"},
-		textMark{orientedStart: transform.Point{X: 300, Y: 50}, text: "12"},
+		{orientedStart: transform.Point{X: 100, Y: 30}, text: "10"},
+		{orientedStart: transform.Point{X: 200, Y: 40}, text: "11"},
+		{orientedStart: transform.Point{X: 300, Y: 50}, text: "12"},
 
 		// y difference < tol => sorts by X descending for approx same Y, different from previous Y
-		textMark{orientedStart: transform.Point{X: 100, Y: 3}, text: "20"},
-		textMark{orientedStart: transform.Point{X: 200, Y: 4}, text: "21"},
-		textMark{orientedStart: transform.Point{X: 300, Y: 5}, text: "22"},
+		{orientedStart: transform.Point{X: 100, Y: 3}, text: "20"},
+		{orientedStart: transform.Point{X: 200, Y: 4}, text: "21"},
+		{orientedStart: transform.Point{X: 300, Y: 5}, text: "22"},
 	}
 
 	// marks is a copy of marks0 with its order scrambled.
@@ -233,7 +233,7 @@ var fileExtractionTests = []struct {
 }{
 	{filename: "reader.pdf",
 		pageTerms: map[int][]string{
-			1: []string{"A Research UNIX Reader:",
+			1: {"A Research UNIX Reader:",
 				"Annotated Excerpts from the Programmer’s Manual,",
 				"1. Introduction",
 				"To keep the size of this report",
@@ -243,61 +243,61 @@ var fileExtractionTests = []struct {
 	},
 	{filename: "000026.pdf",
 		pageTerms: map[int][]string{
-			1: []string{"Fresh Flower",
+			1: {"Fresh Flower",
 				"Care & Handling ",
 			},
 		},
 	},
 	{filename: "search_sim_key.pdf",
 		pageTerms: map[int][]string{
-			2: []string{"A cryptographic scheme which enables searching",
+			2: {"A cryptographic scheme which enables searching",
 				"Untrusted server should not be able to search for a word without authorization",
 			},
 		},
 	},
 	{filename: "Theil_inequality.pdf",
 		pageTerms: map[int][]string{
-			1: []string{"London School of Economics and Political Science"},
-			4: []string{"The purpose of this paper is to set Theil’s approach"},
+			1: {"London School of Economics and Political Science"},
+			4: {"The purpose of this paper is to set Theil’s approach"},
 		},
 	},
 	{filename: "8207.pdf",
 		pageTerms: map[int][]string{
-			1: []string{"In building graphic systems for use with raster devices,"},
-			2: []string{"The imaging model specifies how geometric shapes and colors are"},
-			3: []string{"The transformation matrix T that maps application defined"},
+			1: {"In building graphic systems for use with raster devices,"},
+			2: {"The imaging model specifies how geometric shapes and colors are"},
+			3: {"The transformation matrix T that maps application defined"},
 		},
 	},
 	{filename: "ling-2013-0040ad.pdf",
 		pageTerms: map[int][]string{
-			1: []string{"Although the linguistic variation among texts is continuous"},
-			2: []string{"distinctions. For example, much of the research on spoken/written"},
+			1: {"Although the linguistic variation among texts is continuous"},
+			2: {"distinctions. For example, much of the research on spoken/written"},
 		},
 	},
 	{filename: "26-Hazard-Thermal-environment.pdf",
 		pageTerms: map[int][]string{
-			1: []string{"OHS Body of Knowledge"},
-			2: []string{"Copyright notice and licence terms"},
+			1: {"OHS Body of Knowledge"},
+			2: {"Copyright notice and licence terms"},
 		},
 	},
 	{filename: "Threshold_survey.pdf",
 		pageTerms: map[int][]string{
-			1: []string{"clustering, entropy, object attributes, spatial correlation, and local"},
+			1: {"clustering, entropy, object attributes, spatial correlation, and local"},
 		},
 	},
 	{filename: "circ2.pdf",
 		pageTerms: map[int][]string{
-			1: []string{"Understanding and complying with copyright law can be a challenge"},
+			1: {"Understanding and complying with copyright law can be a challenge"},
 		},
 	},
 	{filename: "rare_word.pdf",
 		pageTerms: map[int][]string{
-			6: []string{"words in the test set, we increase the BLEU score"},
+			6: {"words in the test set, we increase the BLEU score"},
 		},
 	},
 	{filename: "Planck_Wien.pdf",
 		pageTerms: map[int][]string{
-			1: []string{"entropy of a system of n identical resonators in a stationary radiation field"},
+			1: {"entropy of a system of n identical resonators in a stationary radiation field"},
 		},
 	},
 	// Case where combineDiacritics was combining ' and " with preceeding letters.
@@ -306,7 +306,7 @@ var fileExtractionTests = []struct {
 	// close to the preceeding letters.
 	{filename: "/rfc6962.txt.pdf",
 		pageTerms: map[int][]string{
-			4: []string{
+			4: {
 				"timestamps for certificates they then don’t log",
 				`The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",`},
 		},
@@ -435,11 +435,11 @@ func (c pageContents) matchTerms() []string {
 
 // textLocTests are the extracted text location tests. All coordinates are multiples of 0.5 points.
 var textLocTests = []textLocTest{
-	textLocTest{
+	{
 		filename: "prop-price-list-2017.pdf",
 		numPages: 1,
 		contents: map[int]pageContents{
-			1: pageContents{
+			1: {
 				terms: []string{
 					"PRICE LIST",
 					"THING ONE", "$99",
@@ -465,11 +465,11 @@ var textLocTests = []textLocTest{
 			},
 		},
 	},
-	textLocTest{
+	{
 		filename: "pol_e.pdf",
 		numPages: 2,
 		contents: map[int]pageContents{
-			1: pageContents{
+			1: {
 				marks: []TextMark{
 					l(3914, "W", 177.0, 136.5, 188.0, 148.0),
 					l(3915, "T", 187.5, 136.5, 194.5, 148.0),
@@ -482,11 +482,11 @@ var textLocTests = []textLocTest{
 			},
 		},
 	},
-	textLocTest{
+	{
 		filename: "thanh.pdf",
 		numPages: 6,
 		contents: map[int]pageContents{
-			1: pageContents{
+			1: {
 				terms: []string{
 					"result is a set of Type 1 fonts that is similar to the Blue Sky fonts",
 					"provide Vietnamese letters with the same quality of outlines and hints",
@@ -499,7 +499,7 @@ var textLocTests = []textLocTest{
 					"Vietnamese letters with the same quality": r(165.5, 520.5, 344.5, 530.5),
 				},
 			},
-			2: pageContents{
+			2: {
 				terms: []string{
 					"number of glyphs needed for each font is 47",
 					"which 22 are Vietnamese accents and letters.",
@@ -521,11 +521,11 @@ var textLocTests = []textLocTest{
 			},
 		},
 	},
-	textLocTest{
+	{
 		filename: "unicodeexample.pdf",
 		numPages: 6,
 		contents: map[int]pageContents{
-			2: pageContents{
+			2: {
 				terms: []string{
 					"Österreich", "Johann Strauß",
 					"Azərbaycan", "Vaqif Səmədoğlu",
@@ -551,21 +551,21 @@ var textLocTests = []textLocTest{
 			},
 		},
 	},
-	textLocTest{
+	{
 		filename: "AF+handout+scanned.pdf",
 		numPages: 3,
 		contents: map[int]pageContents{
-			1: pageContents{
+			1: {
 				termBBox: map[string]model.PdfRectangle{
 					"reserved": r(505.0, 488.5, 538.5, 497.0),
 				},
 			},
-			2: pageContents{
+			2: {
 				termBBox: map[string]model.PdfRectangle{
 					"atrium": r(452.78, 407.76, 503.78, 416.26),
 				},
 			},
-			3: pageContents{
+			3: {
 				termBBox: map[string]model.PdfRectangle{
 					"treatment": r(348.0, 302.0, 388.0, 311.5),
 				},
@@ -779,7 +779,7 @@ func testTermMarks(t *testing.T, text string, textMarks *TextMarkArray, n int) {
 func runeStringIndex(text string) map[int]int {
 	runeString := map[int]int{}
 	runeIdx := 0
-	for strIdx, _ := range text {
+	for strIdx := range text {
 		runeString[runeIdx] = strIdx
 		runeIdx++
 	}

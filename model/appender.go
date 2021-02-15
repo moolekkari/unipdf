@@ -101,7 +101,7 @@ func getPageResources(p *PdfPage) map[core.PdfObjectName]core.PdfObject {
 }
 
 // NewPdfAppender creates a new Pdf appender from a Pdf reader.
-func NewPdfAppender(reader *PdfReader) (*PdfAppender, error) {
+func NewPdfAppender(reader *PdfReader, pass ...[]byte) (*PdfAppender, error) {
 	a := &PdfAppender{
 		rs:        reader.rs,
 		Reader:    reader,
@@ -132,11 +132,32 @@ func NewPdfAppender(reader *PdfReader) (*PdfAppender, error) {
 	if err != nil {
 		return nil, err
 	}
+
+	var userpass []byte
+	if len(pass) > 0 {
+		userpass = pass[0]
+	}
+
+	enc, err := a.roReader.IsEncrypted()
+	if err != nil {
+		return nil, err
+	}
+	if enc {
+		ok, err := a.roReader.Decrypt(userpass)
+		if err != nil {
+			return nil, err
+		}
+		if !ok {
+			return nil, fmt.Errorf("failed to decrypt")
+		}
+	}
+
 	for _, idx := range a.Reader.GetObjectNums() {
 		if a.greatestObjNum < idx {
 			a.greatestObjNum = idx
 		}
 	}
+
 	a.xrefs = a.parser.GetXrefTable()
 	a.xrefOffset = a.parser.GetXrefOffset()
 

@@ -86,10 +86,10 @@ func TestAppenderNoop(t *testing.T) {
 	origParser := page.GetPageAsIndirectObject().GetParser()
 	origXref := origParser.GetXrefTable()
 	expected := map[int]core.XrefObject{
-		1: core.XrefObject{ObjectNumber: 1, XType: 0, Offset: 18},
-		2: core.XrefObject{ObjectNumber: 2, XType: 0, Offset: 77},
-		3: core.XrefObject{ObjectNumber: 3, XType: 0, Offset: 178},
-		4: core.XrefObject{ObjectNumber: 4, XType: 0, Offset: 457},
+		1: {ObjectNumber: 1, XType: 0, Offset: 18},
+		2: {ObjectNumber: 2, XType: 0, Offset: 77},
+		3: {ObjectNumber: 3, XType: 0, Offset: 178},
+		4: {ObjectNumber: 4, XType: 0, Offset: 457},
 	}
 	require.Equal(t, expected, origXref.ObjectMap)
 
@@ -115,12 +115,12 @@ func TestAppenderNoop(t *testing.T) {
 		parser := page.GetPageAsIndirectObject().GetParser()
 		xrefs := parser.GetXrefTable()
 		expected := map[int]core.XrefObject{
-			1: core.XrefObject{ObjectNumber: 1, XType: 0, Offset: 18},
-			2: core.XrefObject{ObjectNumber: 2, XType: 0, Offset: 77},
-			3: core.XrefObject{ObjectNumber: 3, XType: 0, Offset: 178},
-			4: core.XrefObject{ObjectNumber: 4, XType: 0, Offset: 457},
-			5: core.XrefObject{ObjectNumber: 5, XType: 0, Offset: 740},
-			6: core.XrefObject{ObjectNumber: 6, XType: 0, Offset: 802},
+			1: {ObjectNumber: 1, XType: 0, Offset: 18},
+			2: {ObjectNumber: 2, XType: 0, Offset: 77},
+			3: {ObjectNumber: 3, XType: 0, Offset: 178},
+			4: {ObjectNumber: 4, XType: 0, Offset: 457},
+			5: {ObjectNumber: 5, XType: 0, Offset: 740},
+			6: {ObjectNumber: 6, XType: 0, Offset: 802},
 		}
 		require.Equal(t, expected, xrefs.ObjectMap)
 	}

@@ -272,7 +272,7 @@ func TestFontDescriptor(t *testing.T) {
 	}
 
 	tests := map[fonts.StdFontName]params{
-		"Courier": params{
+		"Courier": {
 			FontName:   "Courier",
 			FontFamily: "Courier",
 			Flags:      0x0021,
@@ -280,7 +280,7 @@ func TestFontDescriptor(t *testing.T) {
 			CapHeight:  562,
 			XHeight:    426,
 		},
-		"ZapfDingbats": params{
+		"ZapfDingbats": {
 			FontName:   "ZapfDingbats",
 			FontFamily: "ZapfDingbats",
 			Flags:      0x0004,

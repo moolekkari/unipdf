@@ -1,14 +1,23 @@
 package creator
 
 import (
+	"bytes"
+	"crypto/rsa"
+	"crypto/x509"
 	"errors"
+	"fmt"
 	goimage "image"
 	"io"
 	"os"
 	"strconv"
+	"time"
 
+	"github.com/moolekkari/unipdf/annotator"
 	"github.com/moolekkari/unipdf/common"
+	"github.com/moolekkari/unipdf/core"
+	"github.com/moolekkari/unipdf/core/security"
 	"github.com/moolekkari/unipdf/model"
+	"github.com/moolekkari/unipdf/model/sighandler"
 )
 
 // Creator is a wrapper around functionality for creating PDF reports and/or adding new
@@ -871,4 +880,183 @@ func (c *Creator) NewImageFromGoImage(goimg goimage.Image) (*Image, error) {
 // NewHTMLContent can be placed inside Chapter, SubChapter, Table's cells.
 func (c *Creator) NewHTMLContent() *HTMLContent {
 	return newHTMLParagraph(c.NewTextStyle())
+}
+
+// SignConfig for signing the page.
+type SignConfig struct {
+	Name     string
+	Reason   string
+	Location string
+
+	Annotations map[string]string
+	Style       SignStyle
+	Coords      []SignCoords
+
+	PrivKey *rsa.PrivateKey
+	Certs   *x509.Certificate
+}
+
+// SignStyle is for signing style of given page.
+type SignStyle struct {
+	AutoSize   bool
+	Font       *model.PdfFont
+	FontSize   float64
+	LineHeight float64
+	BorderSize float64
+
+	FontColorRGBA   model.PdfColorDeviceRGB
+	BgColorRGBA     model.PdfColorDeviceRGB
+	BorderColorRGBA model.PdfColorDeviceRGB
+}
+
+// SignCoords where annotations to be shown.
+type SignCoords struct {
+	Pages []int
+	X1    float64
+	X2    float64
+	Y1    float64
+	Y2    float64
+}
+
+// SignAndWrite will sign, encrypt the page if hook is set, and write page to PDF file.
+// This function will first write the source file to a temporary writer, then signs and encrypts.
+// Because, Signing is only possible with append mode.
+func (c *Creator) SignAndWrite(userPass, ownerPass []byte, writer io.Writer, config SignConfig) error {
+	var buf bytes.Buffer
+	if err := c.Write(&buf); err != nil {
+		return err
+	}
+
+	rdr := bytes.NewReader(buf.Bytes())
+	rd, err := model.NewPdfReader(rdr)
+	if err != nil {
+		return err
+	}
+
+	enc, err := rd.IsEncrypted()
+	if err != nil {
+		return err
+	}
+	if enc {
+		if userPass == nil || ownerPass == nil {
+			return fmt.Errorf("either userpass or ownerpass is empty")
+		}
+
+		ok, err := rd.Decrypt(ownerPass)
+		if err != nil {
+			return err
+		}
+		if !ok {
+			return fmt.Errorf("failed to decrypt")
+		}
+	}
+
+	ap, err := model.NewPdfAppender(rd, userPass)
+	if err != nil {
+		return err
+	}
+
+	h, err := sighandler.NewAdobePKCS7Detached(config.PrivKey, config.Certs)
+	if err != nil {
+		return err
+	}
+
+	sig := model.NewPdfSignature(h)
+	sig.SetName(config.Name)
+	sig.SetReason(config.Reason)
+	sig.SetLocation(config.Location)
+	sig.SetDate(time.Now(), "")
+
+	if err := sig.Initialize(); err != nil {
+		return err
+	}
+
+	lines := make([]*annotator.SignatureLine, 0, len(config.Annotations))
+	for k, v := range config.Annotations {
+		lines = append(lines, annotator.NewSignatureLine(k, v))
+	}
+
+	// Go through each set of coordinates and within that, each page number.
+	for _, c := range config.Coords {
+		// Create signature field and appearance.
+		opts := annotator.NewSignatureFieldOpts()
+		opts.FontSize = config.Style.FontSize
+		opts.TextColor = &config.Style.FontColorRGBA
+		opts.FillColor = &config.Style.BgColorRGBA
+		opts.BorderColor = &config.Style.BorderColorRGBA
+		opts.BorderSize = config.Style.BorderSize
+		opts.AutoSize = config.Style.AutoSize
+		opts.Font = config.Style.Font
+		opts.Rect = []float64{c.X1, c.Y1, c.X2, c.Y2}
+
+		field, err := annotator.NewSignatureField(sig, lines, opts)
+		field.T = core.MakeString("")
+		for _, p := range c.Pages {
+			if err = ap.Sign(p, field); err != nil {
+				return err
+			}
+		}
+	}
+
+	var outbuf bytes.Buffer
+	if err := ap.Write(&outbuf); err != nil {
+		return err
+	}
+
+	rd2, err := model.NewPdfReader(bytes.NewReader(outbuf.Bytes()))
+	if err != nil {
+		return err
+	}
+
+	wr := model.NewPdfWriter()
+	enc, err = rd2.IsEncrypted()
+	if err != nil {
+		return err
+	}
+	if enc {
+		if userPass == nil || ownerPass == nil {
+			return fmt.Errorf("either userpass or ownerpass is empty")
+		}
+
+		ok, err := rd.Decrypt(ownerPass)
+		if err != nil {
+			return err
+		}
+		if !ok {
+			return fmt.Errorf("failed to decrypt")
+		}
+	}
+
+	perms := security.PermPrinting | // Allow printing with low quality
+		security.PermFullPrintQuality |
+		security.PermModify | // Allow modifications.
+		security.PermAnnotate | // Allow annotations.
+		security.PermFillForms |
+		security.PermRotateInsert | // Allow modifying page order, rotating pages etc.
+		security.PermExtractGraphics | // Allow extracting graphics.
+		security.PermDisabilityExtract // Allow extracting graphics (accessibility)
+
+	if userPass != nil || ownerPass != nil {
+		wr.Encrypt(userPass, ownerPass, &model.EncryptOptions{
+			Permissions: perms,
+		})
+	}
+
+	numPages, err := rd.GetNumPages()
+	if err != nil {
+		return err
+	}
+
+	// Append the pages to the writer.
+	for i := 1; i <= numPages; i++ {
+		page, err := rd.GetPage(i)
+		if err != nil {
+			return err
+		}
+		if err = wr.AddPage(page); err != nil {
+			return err
+		}
+	}
+
+	return wr.Write(writer)
 }
